@@ -1,0 +1,54 @@
+.main-nosotros{
+    @include justali (center, center);
+    @include display(flex);
+    @include flex(col);
+    background-color: map-get($map: $paleta, $key: cinco);
+    overflow: hidden;
+    &__section{
+        @include display(flex);
+        @include flex(col);
+        &--article{
+            @include widhei(100%, auto);
+            @include justali(center, center);
+            text-align: center;
+            @include marpad(0, 20px);
+            @include display(flex);
+            @include flex(col);
+            &--image{
+                @include widhei(100%,auto);
+                @include marpad(0, 5px);
+            }
+            &--text{
+                @include widhei(100%, auto);
+                @include marpad(0,5px);
+                @include texts(4vw, 500, rgb(0, 0, 0))
+            }
+        }
+    }
+    &__founders{
+        @include widhei(100%, auto);
+        @include justali(center, center);
+        @include marpad(0, 10px);
+        @include display(flex);
+        @include   flex(col);
+        &--div{
+            @include widhei(100%, auto);
+            @include justali(center, center);
+            text-align: center;
+            @include marpad(0, 20px);
+            @include display(flex);
+            @include flex(col);
+            &--img{
+                width: 60%
+            }
+            &--name{
+                @include marpad(0, 5px);
+                @include texts(7vw, 600, rgba(55, 106, 109));
+            }
+            &--position{
+                @include marpad(0, 5px);
+                @include texts(5vw, 400, rgb(114, 114, 114));
+            }
+        }
+    }
+}

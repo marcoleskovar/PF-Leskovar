@@ -1,0 +1,323 @@
+.header{
+    @include widhei(100%, auto);
+    @include justali(center, center);
+    @include display(flex);
+    @include flex(row);
+    background-color: map-get($map: $paleta, $key: "uno");
+    box-shadow: -1px 5px 11px -3px rgba(0,0,0,0.67);
+    @include position(sticky, 0, 0);
+    overflow: hidden;
+    z-index: 100000;
+    &__first{
+        @include display(flex);
+        @include flex(row);
+        overflow: hidden;
+        &--logo{
+            align-content: center;
+            @include marpad(0, 10px 15px);
+            &--mini{
+                @include widhei(9vw, auto);
+                &:hover{
+                    transform:scale(1.02);
+                }
+            }
+            &--full{
+                @include widhei(300px, auto);
+                @include display(no);
+                &:hover{
+                    transform:scale(1.03);
+                }
+            }
+        }
+        &--nav-sup{
+            @include marpad (0, 10px 15px);
+            @include justali (end, center);
+            @include display (flex);
+            overflow: hidden;
+            &--lupa-1{
+                @include widhei (9vw, auto);
+                @include marpad(0 10px 0 0, 0);
+                transform: scaleX(-1);
+                background-color: map-get($map: $paleta, $key: no);
+                &:hover{
+                    transform: scale(1.1) scaleX(-1);
+                }
+                & path{
+                    color: map-get($map: $paleta, $key: ocho);
+                }
+            }
+            &--list{
+                @include widhei(11vw, auto);
+                color: map-get($map: $paleta, $key: ocho);
+            }
+        }
+    }
+    &__desktop-subpages{
+        @include display(no);
+    }
+}
+.nav{
+    @include justali (center, center);
+    @include display(flex);
+    text-align: center;
+    background-color: map-get($map: $paleta, $key: uno);
+    overflow: hidden;
+    &__ul{
+        @include marpad (0, 7px 15px);
+        @include justali (center, center);
+        justify-items: center;
+        @include display (flex);
+        @include flex(col);
+        overflow: hidden;
+        &--li{
+            @include widhei(100%, auto);
+            @include marpad(4px, 0);
+            @include list(none, none);
+            background-color: map-get($map: $paleta, $key: cuatro);
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: map-get($map: $paleta, $key: dos);
+                transform:scale(1.03);
+                & h4{
+                    @include texts(4vw, 800, rgba(145, 136, 104));
+                }
+            }
+            &--svg{
+                @include widhei(13vw, auto);
+                transform: scaleX(-1);
+                & path{
+                    color: map-get($map: $paleta, $key: cinco );
+                }
+            }
+            &--subpages{
+                @include justali(center, center);
+                @include texts(4vw, 600, rgba(145, 136, 104));
+                @include marpad(20px, 0);
+                @include display(no);
+            }
+        }
+    }
+    &__log{
+        @include marpad(4px, 0);
+        @include display(flex);
+        color: map-get($map: $paleta, $key: no);
+        overflow: hidden;
+        &--login{
+            text-decoration: none;
+            &--button{
+                @include marpad(0, 2px);
+                @include justali(center, center);
+                @include display(flex);
+                background-color: map-get($map: $paleta, $key: no);
+                border: 2px solid rgba(145, 136, 104);
+                border-radius: 100px;
+                cursor: pointer;
+                &:hover{
+                    background-color: map-get($map: $paleta, $key: cuatro);
+                    & span{
+                        font-weight: 800;
+                    }
+                    & .nav__log--login--button--img1{
+                        @include display(no);
+                    }
+                    & .nav__log--login--button--img1--2{
+                        @include display(flex)
+                    }
+                }
+                &--img1{
+                    @include widhei(14vw, auto);
+                    @include marpad (0 4px 0 0, 3px 0 3px 3px);
+                    color: map-get($map: $paleta, $key: cinco);
+                    &--2{
+                        @extend .nav__log--login--button--img1;
+                        @include display(no);
+                    }
+                }
+                &--span1{
+                    @include texts(6vw, 500, rgba(255, 251, 252));
+                    padding-right: 4px;
+                    @include justali(center, center);
+                    text-decoration:none;
+                }
+                &:active span{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__text{
+        @include marpad(4px, 0);
+        &__ul{
+            list-style: none;
+            &--subpages-text-only{
+                @include widhei (100%, auto);
+                @include marpad (0, 7px);
+                text-decoration:none;
+                &:hover a{
+                    @include texts(6vw, 800, rgba(55, 106, 109));
+                    text-decoration: none;
+                    transform: scale(1.04);
+                }
+                & a{
+                    @include texts(6vw, 700, rgba(255, 251, 252));
+                    @include display(in);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+#BusquedaNav{
+    @include display(no)
+ }
+ #ProductosNav{
+    @include display(no)
+ }
+ #NosotrosNav{
+    @include display(no)
+ }
+ #ContactanosNav{
+    @include display(no)
+ }
+
+.footer{
+    @include widhei(100%, auto);
+    @include justali(center, center);
+    @include marpad(0, 20px 0 10px 0);
+    @include display(flex);
+    @include flex(wrap);
+    background-color: map-get($map: $paleta, $key: nueve);
+    overflow: hidden;
+    &__main-text{
+        @include widhei (100%, auto);
+        @include marpad(0, 10px);
+        color: map-get($map: $paleta, $key: cinco);
+        & h3{
+            @include texts(11vw, 700, rgba(255, 251, 252));
+            @include marpad(0, 10px)
+        }
+    }
+    &__content{
+        @include widhei(100%, auto);
+        @include justali (center, center);
+        @include display (flex);
+        @include flex(wrap);
+        &--contact-items{
+            @include widhei(100%, auto);
+            @include justali(center, center);
+            @include marpad(20px, 0);
+            @include display(flex);
+            &--ul{
+                @include widhei (auto, auto);
+                justify-content: center;
+                @include display(flex);
+                @include flex(col);
+                &--li{
+                    @include widhei(auto, auto);
+                    @include justali (start, center);
+                    @include marpad(0, 10px);
+                    @include display(flex);
+                    @include flex(row);
+                    list-style: none;
+                    & svg{
+                        @include widhei(11vw, auto);
+                        @include marpad(0 20px 0 0, 0);
+                        color: map-get($map: $paleta, $key: cinco)
+                    }
+                    & h5{
+                        @include texts(4.5vw, 400, rgba(255, 251, 252));
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &__form{
+        @include widhei(100%, auto);
+        @include justali(center, center);
+        text-align: center;
+        @include marpad(20px, 0);
+        @include display (flex);
+        @include flex(col);
+        & h4{
+            @include texts(5.5vw, 700, rgba(255, 251, 252))
+        }
+        &--formulario{
+            @include widhei(90%, auto);
+            align-items: center;
+            @include display(flex);
+            @include flex(col);
+        }
+    }
+        input[type="text"], input[type="email"], textarea{
+            @include widhei(100%, auto);
+            @include marpad(5px, 10px);
+            font-size: 5vw;
+            border:none;
+            border-radius: 5px;
+        }
+        textarea{
+            @include widhei(100%, 15vh);
+            resize: none;
+        }
+        input[type="submit"]{
+            @include widhei(100%, auto);
+            @include marpad(5px, 5px 20px);
+            @include texts(5.5vw, 500, rgba(255, 251, 252));
+            background-color: rgba(55, 106, 109);
+            border: 1px solid rgba(255, 251, 252);
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(42, 82, 84);
+            }
+     }
+    &__map{
+        @include widhei(auto, auto);
+        padding: 10px;
+        & iframe{
+            @include widhei(100%, 80vh);
+            border:none;
+        }
+    }
+    &__redes{
+        @include widhei(100%, auto);
+        margin: 20px;
+        @include display(flex);
+        &--ul{
+            width: 100%;
+            @include justali(space-around, center);
+            @include display(flex);
+            &--li{
+                justify-content: space-between;
+                @include marpad(0, 10px);
+                @include display(flex);
+                @include flex(row);
+                & a svg{
+                    @include widhei(12vw, auto);
+                    color: map-get($map: $paleta, $key: dos);
+                }
+            }
+        }
+    }
+    &__desc{
+        @include widhei(100%, auto);
+        @include justali(center, center);
+        @include marpad(0, 10px);
+        @include display(flex);
+        border-top: 1px solid rgb(172, 172, 172);
+        & h6{
+            @include texts(3vw, 500, rgba(255, 251, 252));
+            @include marpad(0,0);
+        }
+    }
+}
+
+.page-main-text{
+    @include widhei(100%, auto);
+    @include justali(center, center);
+    @include marpad(0, 25px 20px 20px 20px);
+    text-align:center;
+    @include texts(12vw, 600, rgba(114, 114, 114));
+}

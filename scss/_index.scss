@@ -1,0 +1,94 @@
+.main-index{
+    @include widhei(100vw, 100vh);
+    @include justali(center, center);
+    align-content: center;
+    text-align: center;
+    @include flex(col);
+    overflow: hidden;
+    z-index: -1000;
+    &__bg{
+        @include widhei(100%, 100%);
+        background-image: url(../imagenes/deposito.jpg);
+        background-position: center center;
+        background-size:auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.8) blur(3px);
+        overflow: hidden;
+    }
+    &__text{
+        @include widhei(100%, 100%);
+        @include justali(center, center);
+        @include marpad (0, 5px);
+        text-align: center;
+        @include display (flex);
+        @include position(absolute, 10%, 0);
+        & h1{
+            @include texts(13vw, 800, rgba(255, 251, 252));
+        }
+    }
+}
+.section-1-index{
+    @include widhei (100%, auto);
+    @include justali (center, center);
+    text-align:center;
+    padding: 10px 30px 10px 30px;
+    @include display(flex);
+    @include flex(col);
+    background-color: map-get($map: $paleta, $key: catorce);
+    overflow: hidden;
+    z-index: 15000;
+    &__text{
+        @include texts(10vw,600,rgba(55, 106, 109));
+        margin: 15px 0 10px 0;
+    }
+    &__article-1{
+        @include widhei(auto, auto);
+        @include justali(center, center);
+        @include display(flex);
+        @include flex(row);
+        flex-wrap: wrap;
+        z-index: 500;
+        &--figure{
+            @include widhei(auto, auto);
+            @include justali(center, center);
+            align-content: center;
+            @include marpad(10px, 0);
+            @include display(flex);
+            @include flex(col);
+            background-color: map-get($map: $paleta, $key: cinco);
+            border-radius: 5px;
+            border: 1px solid rgb(142, 142, 142);
+            cursor: pointer;
+            &:active{
+                box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
+            }
+            &--img{
+                width: 90%;
+            }
+            &--figcap{
+                @include widhei(85%, auto);
+                @include texts(6vw, 700, rgba(55, 106, 109));
+                @include marpad(0, 5px 0 0 0 );
+                text-align: center;
+                border-top: 1px solid rgba(55, 106, 109);
+                @include position(relative, -10px, 0)
+            }
+        }
+    }
+    & div{
+        margin: 10px 0 10px 0;
+        & a{
+            @include texts(5.5vw, 500,  rgb(110, 110, 110));
+            text-decoration: none;
+            margin-bottom: 5px;
+            color: map-get($map: $paleta, $key: trece);
+            &:hover{
+                color: map-get($map: $paleta, $key: nueve);
+            }
+            &:active{
+                text-decoration: underline;
+            }
+        }
+    }
+}

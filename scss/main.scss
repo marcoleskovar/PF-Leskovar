@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ html{
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+ }
+
+ #inicio, #productos, #novedades, #carrito, #nosotros{
+    z-index: -1000;
+ }
+@import "_vars";
+@import "_mixins";
+@import "_all-pages";
+@import "_index";
+@import "_productos";
+@import "_novedades";
+@import "_carrito";
+@import "_nosotros";
+@import "_breakpoints";
