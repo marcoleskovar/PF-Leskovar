@@ -328,3 +328,306 @@
     text-align:center;
     @include texts(12vw, 600, rgba(114, 114, 114));
 }
+
+@media (min-width:576px){
+/* ALL-PAGES = START */
+    .header__first--{
+        &nav-sup--{
+            &lupa-1{
+                @include widhei(8vw,auto);
+            }
+            &list{
+                @include widhei(10vw, auto);
+            }
+        }
+        &logo--mini{
+            @include widhei(8vw, auto)
+        }
+    }
+
+    .nav__{
+        &log{
+            justify-content: center;
+            &--login--button{
+                &--img1{
+                    @include widhei (11vw, auto);
+                }
+                &--span1{
+                    @include fs(5vw);
+                }
+            }
+        }
+        &ul{
+            @include flex(row);
+            &--li{
+                @include widhei (100%,auto);
+                padding: 20px 30px;
+                &--svg{
+                    @include widhei(10vw, auto);
+                }
+            }
+        }
+        &text--ul--subpages-text-only a{
+            @include fs(4.5vw);
+        }
+    }
+    input{
+    &[type="text"], input[type="email"], textarea{
+        @include fs(5vw);
+    }
+    &[type="submit"]{
+        @include fs(5vw);
+    }
+    }
+/* ALL-PAGES = END */
+}
+
+@media (min-width:768px){
+/* ALL-PAGES = START */
+    .header__first--{
+        &logo--{
+            &mini{
+                @include display(no);
+            }
+            &full{
+                @include display(flex);
+                @include wid(27vw)
+            }
+        }
+        &nav-sup--{
+            &lupa-1{
+                @include wid(7vw);
+            }
+            &list{
+                @include wid(9vw);
+            }
+        }
+    }
+
+    .nav__{
+        &log{
+            @include mar(10px);
+            &--login--button--{
+                &img1{
+                    @include wid(9vw);
+                }
+                &span1{
+                    @include fs(4vw);
+                    @include pad(0 6px 0 0);
+                }
+            }
+        }
+        &ul{
+            @include flex(col);
+            &--li{
+                @include marpad(10px,0);
+                &--svg{
+                    @include wid(9vw);
+                }
+                & a{
+                    @include justali (center, center);
+                    text-align: center;
+                    @include display (flex);
+                }
+                &--subpages{
+                    @include display (flex);
+                    @include mar(10px);
+                    color: map-get($map: $paleta, $key: cinco);
+                }
+            }
+        }
+        &text--ul--subpages-text-only a{
+            @include fs(4vw);
+        }
+    }
+
+    .footer{
+        &__main-text h3{
+            @include fs(9.5vw);
+        }
+        &__content--contact-items--ul--li{
+            & svg{
+                @include wid(9vw)
+            }
+            & h5{
+                @include fs(3.5vw)
+            }
+        }
+        &__redes--ul--li a svg{
+            @include wid(9vw)
+        }
+    }
+    input{
+        &[type="text"], input[type="email"], textarea{
+            @include fs(3.5vw);
+         }
+        &[type="submit"]{
+            @include fs(4vw);
+         }
+    }
+/* ALL-PAGES = END */
+}
+
+@media (min-width:992px){
+/* ALL-PAGES = START */
+    .header{
+        @include display(flex);
+        @include flex(col);
+        &__first{
+            @include display(flex);
+            @include flex(row);
+            &--logo--full{
+                @include wid(130px);
+            }
+            &--nav-sup{
+                @include display(no);
+            }
+        }
+        &__desktop-subpages{
+            @include wid(100%);
+            @include justali(center, center);
+            @include display (flex);
+            background-color: map-get($map: $paleta, $key: cinco);
+            &__ul{
+                @include wid(100%);
+                @include justali(space-around, center);
+                @include marpad (0, 0);
+                @include display(flex);
+                list-style: none;
+                &--li{
+                    @include wid(100%);
+                    @include pad(3px);
+                    text-align: center;
+                    &:hover{
+                        @include pad(0);
+                        background-color: map-get($map: $paleta, $key: ocho);
+                        & a{
+                            @include fs(18px);
+                        }
+                    }
+                    & a{
+                        @include display (blo);
+                        @include texts(16px, 500, rgba(73, 73, 73));
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav{
+        @include display(flex);
+        @include flex(row-re);
+        justify-content: end;
+        &__log{
+            @include wid(auto);
+            justify-content: end;
+            @include display(flex);
+            @include flex(row);
+            &--login--button{
+                &--img1{
+                    @include wid(30px)
+                }
+                &--span1{
+                    @include texts(15px, 400, rgba(255, 251, 252));
+                    @include pad(0 6px 0 0)
+                }
+            }
+        }
+        &__ul{
+            @include wid(auto);
+            @include pad(0);
+            @include display(flex);
+            &--li{
+                @include wid(auto);
+                @include marpad(0, 0);
+                background-color: map-get($map: $paleta, $key:no);
+                &:hover{
+                    background-color: map-get($map: $paleta, $key: no);
+                }
+                &--svg{
+                    @include wid(30px);
+                    & path{
+                        color: map-get($map: $paleta, $key: cinco);
+                    }
+                }
+                &:hover path{
+                    color: map-get($map: $paleta, $key:dos);
+                    transform:scale(1.03);
+                }
+                & a{
+                    @include justali (center, center);
+                    text-align: center;
+                    @include display(flex);
+                }
+                &--subpages{
+                    @include display(no);
+                }
+            }
+        }
+        &__text{
+            @include display(no);
+        }
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row-reverse;
+     }
+
+     #ProductosItem{
+        display: none;
+     }
+  
+     #BusquedaNav{
+        display: flex;
+     }
+
+     #footer-nav{
+        @include widhei (100%, 50px);
+        background-color: map-get($map: $paleta, $key: nueve);
+     }
+
+    .footer{
+        &__main-text h3{
+            @include fs(70px);
+        }
+        &__content--contact-items{
+            @include justali(start, center);
+            &--ul--li{
+                & svg{
+                    @include wid(45px);
+                }
+                & h5{
+                    @include fs(20px);
+                }
+            }
+        }
+        &__form{
+            justify-content: center;
+            align-content: start;
+            & h4{
+                @include fs(30px);
+            }
+        }
+        &__redes{
+            @include mar(20px);
+            @include display(flex);
+            &--ul{
+                justify-content: space-evenly;
+                &--li a svg{
+                    @include wid(70px);
+                }
+            }
+        }
+        &__desc h6{
+            @include fs(12px);
+        }
+        input[type="text"], input[type="email"], textarea{
+            @include fs (19px);
+         }
+
+        input[type="submit"]{
+            @include fs(22px);
+        }
+    }
+/* ALL-PAGES = END */
+}

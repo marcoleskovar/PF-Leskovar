@@ -52,3 +52,96 @@
         }
     }
 }
+
+@media (min-width:576px){
+/* ----------------NOSOTROS=START----------------- */
+    .page-main-text{
+        font-size: 11vw;
+    }
+/* ----------------NOSOTROS=END----------------- */
+}
+
+@media (min-width:768px){
+/* ----------------NOSOTROS=START----------------- */
+    .page-main-text{
+        @include fs(10vw);
+    }
+    .main-nosotros{
+        &__section--article--image{
+            @include wid(85%);
+        }
+        &__founders{
+            @include wid(100%);
+            @include flex(row);
+            &--div{
+                @include wid(33%);
+                &--img{
+                    @include wid (100%);
+                }
+                &--name{
+                     @include fs(4.5vw);
+                }
+                &--position{
+                    @include fs(3vw);
+                }
+            }
+        }
+    }
+/* ----------------NOSOTROS=END----------------- */
+}
+
+@media (min-width:992px){
+/* ----------------NOSOTROS=START----------------- */
+    .page-main-text{
+        @include fs(4vw);
+    }
+
+    .art-nos-{
+        &1{
+            @include justali (space-evenly, center);
+            @include display(flex);
+            @include flex(row);
+            text-align: end;
+        }
+        &2{
+            @include justali(space-evenly, center);
+            @include display(flex);
+            @include flex(row-re);
+            text-align: start;
+        }
+        &3{
+            @include justali(space-evenly, center);
+            @include display (flex);
+            @include flex(row);
+            text-align: end;
+        }
+    }
+
+    .main-nosotros{
+        &__section--article--{
+            &image{
+                @include wid(35%);
+                @include pad(5px);
+            }
+            &text{
+                @include wid(50%);
+                @include marpad(0, 5px);
+                @include texts(2vw, 500, rgb(0,0,0));
+            }
+        }
+        &__founders--div--{
+            &img{
+                @include wid(50%)
+            }
+            &name{
+                @include texts(2vw, 600, rgba(55, 106, 109));
+                @include marpad (0, 5px);
+            }
+            &position{
+                @include texts(1.5vw, 400, rgba(114, 114, 114));
+                @include marpad(0,0);
+            }
+        }
+    }
+/* ----------------NOSOTROS=END----------------- */
+}
