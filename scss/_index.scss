@@ -39,7 +39,7 @@
     overflow: hidden;
     z-index: 15000;
     &__text{
-        @include texts(10vw,600,rgba(55, 106, 109));
+        @include texts(5vw,600,rgba(55, 106, 109));
         margin: 15px 0 10px 0;
     }
     &__article-1{
@@ -50,7 +50,7 @@
         flex-wrap: wrap;
         z-index: 500;
         &--figure{
-            @include widhei(auto, auto);
+            @include widhei(80%, auto);
             @include justali(center, center);
             align-content: center;
             @include marpad(10px, 0);
@@ -64,7 +64,7 @@
                 box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
             }
             &--img{
-                width: 90%;
+                @include wid(90%);
             }
             &--figcap{
                 @include widhei(85%, auto);

@@ -45,24 +45,16 @@
     align-items: $ali;
 }
 
-/* ALIGN ITEMS */
-@mixin align-it ($ali: center){
-    @if $ali == center{
-        align-items:center;
-    }
-    @else if $ali == end{
-        align-items: end;
-    }
-    @else if $ali == start{
-        align-items: start;
-    }
-}
-
 /* TEXTOS */
 @mixin texts ($size, $weight, $color){
     font-size: $size;
     font-weight: $weight;
     color: $color;
+}
+
+/* FONT-SIZE */
+@mixin fs ($fs){
+    font-size: $fs;
 }
 
 /* MARGIN Y PADDING */
@@ -71,9 +63,29 @@
     padding: $pad;
 }
 
+/* MARGIN */
+@mixin mar($mar){
+    margin: $mar;
+}
+
+/* PADDING */
+@mixin pad($pad){
+    padding: $pad;
+}
+
 /* WIDTH Y HEIGHT */
 @mixin widhei($width, $height){
     width: $width;
+    height: $height;
+}
+
+/* WIDTH */
+@mixin wid($width){
+    width: $width;
+}
+
+/* HEIGHT */
+@mixin hei($height){
     height: $height;
 }
 

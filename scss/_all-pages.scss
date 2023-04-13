@@ -114,7 +114,8 @@
                 border-radius: 100px;
                 cursor: pointer;
                 &:hover{
-                    background-color: map-get($map: $paleta, $key: cuatro);
+                    background-color: map-get($map: $paleta, $key: dos);
+                    border-color: map-get($map: $paleta, $key: cinco);
                     & span{
                         font-weight: 800;
                     }
@@ -148,7 +149,7 @@
     }
     &__text{
         @include marpad(4px, 0);
-        &__ul{
+        &--ul{
             list-style: none;
             &--subpages-text-only{
                 @include widhei (100%, auto);
@@ -181,63 +182,68 @@
     @include display(no)
  }
 
+ #footer-nav{
+    background-color: map-get($map: $paleta, $key: nueve);
+ }
+ 
 .footer{
     @include widhei(100%, auto);
-    @include justali(center, center);
-    @include marpad(0, 20px 0 10px 0);
+    justify-content: center;
+    @include pad(20px 0 10px 0);
     @include display(flex);
     @include flex(wrap);
     background-color: map-get($map: $paleta, $key: nueve);
     overflow: hidden;
     &__main-text{
         @include widhei (100%, auto);
-        @include marpad(0, 10px);
+        @include pad(10px);
         color: map-get($map: $paleta, $key: cinco);
         & h3{
             @include texts(11vw, 700, rgba(255, 251, 252));
-            @include marpad(0, 10px)
+            @include pad(10px)
         }
     }
     &__content{
         @include widhei(100%, auto);
-        @include justali (center, center);
+        justify-content: center;
+        align-content: center;
         @include display (flex);
         @include flex(wrap);
         &--contact-items{
-            @include widhei(100%, auto);
-            @include justali(center, center);
-            @include marpad(20px, 0);
+            @include hei(auto);
+            justify-content: center;
+            @include mar(20px);
             @include display(flex);
             &--ul{
-                @include widhei (auto, auto);
+                @include hei (auto);
                 justify-content: center;
                 @include display(flex);
                 @include flex(col);
                 &--li{
                     @include widhei(auto, auto);
                     @include justali (start, center);
-                    @include marpad(0, 10px);
+                    @include pad(10px);
                     @include display(flex);
                     @include flex(row);
                     list-style: none;
                     & svg{
                         @include widhei(11vw, auto);
-                        @include marpad(0 20px 0 0, 0);
+                        @include mar(0 20px 0 0);
                         color: map-get($map: $paleta, $key: cinco)
                     }
                     & h5{
                         @include texts(4.5vw, 400, rgba(255, 251, 252));
-                        margin-right: 10px;
+                        @include mar(0 10px 0 0)
                     }
                 }
             }
         }
     }
     &__form{
-        @include widhei(100%, auto);
-        @include justali(center, center);
+        @include hei(auto);
+        align-items: center;
         text-align: center;
-        @include marpad(20px, 0);
+        @include mar(20px);
         @include display (flex);
         @include flex(col);
         & h4{
@@ -251,14 +257,14 @@
         }
     }
         input[type="text"], input[type="email"], textarea{
-            @include widhei(100%, auto);
+            @include wid(100%);
             @include marpad(5px, 10px);
-            font-size: 5vw;
+            @include fs(5vw);
             border:none;
             border-radius: 5px;
         }
         textarea{
-            @include widhei(100%, 15vh);
+            @include hei(15vh);
             resize: none;
         }
         input[type="submit"]{
@@ -274,7 +280,7 @@
             }
      }
     &__map{
-        @include widhei(auto, auto);
+        @include hei(auto);
         padding: 10px;
         & iframe{
             @include widhei(100%, 80vh);
@@ -282,16 +288,17 @@
         }
     }
     &__redes{
-        @include widhei(100%, auto);
-        margin: 20px;
+        @include wid(100%);
+        @include mar(20px);
         @include display(flex);
         &--ul{
-            width: 100%;
+            @include wid (100%);
             @include justali(space-around, center);
             @include display(flex);
+            list-style: none;
             &--li{
                 justify-content: space-between;
-                @include marpad(0, 10px);
+                @include pad(10px);
                 @include display(flex);
                 @include flex(row);
                 & a svg{
@@ -302,14 +309,14 @@
         }
     }
     &__desc{
-        @include widhei(100%, auto);
+        @include wid(100%);
         @include justali(center, center);
-        @include marpad(0, 10px);
+        @include pad(10px);
         @include display(flex);
         border-top: 1px solid rgb(172, 172, 172);
         & h6{
             @include texts(3vw, 500, rgba(255, 251, 252));
-            @include marpad(0,0);
+            @include mar(0);
         }
     }
 }
