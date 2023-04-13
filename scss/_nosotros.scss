@@ -2,7 +2,7 @@
     @include justali (center, center);
     @include display(flex);
     @include flex(col);
-    background-color: map-get($map: $paleta, $key: cinco);
+    background-color: map-get($map: $paleta, $key: catorce);
     overflow: hidden;
     &__section{
         @include display(flex);
