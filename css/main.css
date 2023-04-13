@@ -969,7 +969,7 @@ html {
     font-size: 22px;
   }
   /* ALL-PAGES = END */
-  /* ----------------INDEX=STAR----------------- */
+  /* ----------------INDEX=START----------------- */
   .main-index__text h1 {
     font-size: 5.5vw;
     font-weight: 800;
@@ -1007,6 +1007,62 @@ html {
   .section-1-index div a:hover {
     color: rgb(73, 73, 73);
   }
+  /* ----------------INDEX=END----------------- */
+  /* ----------------NOSOTROS=START----------------- */
+  .page-main-text {
+    font-size: 4vw;
+  }
+  .art-nos-1 {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+  }
+  .art-nos-2 {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: start;
+  }
+  .art-nos-3 {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+  }
+  .main-nosotros__section--article--image {
+    width: 35%;
+    padding: 5px;
+  }
+  .main-nosotros__section--article--text {
+    width: 50%;
+    margin: 0;
+    padding: 5px;
+    font-size: 2vw;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  .main-nosotros__founders--div--img {
+    width: 50%;
+  }
+  .main-nosotros__founders--div--name {
+    font-size: 2vw;
+    font-weight: 600;
+    color: rgb(55, 106, 109);
+    margin: 0;
+    padding: 5px;
+  }
+  .main-nosotros__founders--div--position {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+    margin: 0;
+    padding: 0;
+  }
+  /* ----------------NOSOTROS=END----------------- */
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -369,42 +369,96 @@
     }
 /* ALL-PAGES = END */
 
-/* ----------------INDEX=STAR----------------- */
-.main-index__text h1{
-    @include texts(5.5vw, 800, rgba(255, 251, 252));
-}
-
-#ProDest{
-    @include widhei(100%, 80px);
-    background-color: map-get($map: $paleta, $key: catorce);
-}
-
-.section-1-index{
-    &__text{
-        @include texts(5vw, 600, rgba(55, 106, 109));
+/* ----------------INDEX=START----------------- */
+    .main-index__text h1{
+        @include texts(5.5vw, 800, rgba(255, 251, 252));
     }
-    &__article-1--figure{
-        @include wid(30%);
-        justify-content: center;
-        &:hover{
-            box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
-        }
-        &:active{
-            transform: scale(1.02);
-        }
-        &--img{
-            @include wid(70%);
-        }
-        &--figcap{
-            @include fs(25px);
-        }
-    }
-    & div a{
-        @include fs(20px);
-        &:hover{
-            color: map-get($map: $paleta, $key: nueve);
-        }
-    }
-}
 
+    #ProDest{
+        @include widhei(100%, 80px);
+        background-color: map-get($map: $paleta, $key: catorce);
+    }
+
+    .section-1-index{
+        &__text{
+            @include texts(5vw, 600, rgba(55, 106, 109));
+        }
+        &__article-1--figure{
+            @include wid(30%);
+            justify-content: center;
+            &:hover{
+                box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
+            }
+            &:active{
+                transform: scale(1.02);
+            }
+            &--img{
+                @include wid(70%);
+            }
+            &--figcap{
+                @include fs(25px);
+            }
+        }
+        & div a{
+            @include fs(20px);
+            &:hover{
+                color: map-get($map: $paleta, $key: nueve);
+            }
+        }
+    }
+/* ----------------INDEX=END----------------- */
+
+/* ----------------NOSOTROS=START----------------- */
+    .page-main-text{
+        @include fs(4vw);
+    }
+
+    .art-nos-{
+        &1{
+            @include justali (space-evenly, center);
+            @include display(flex);
+            @include flex(row);
+            text-align: end;
+        }
+        &2{
+            @include justali(space-evenly, center);
+            @include display(flex);
+            @include flex(row-re);
+            text-align: start;
+        }
+        &3{
+            @include justali(space-evenly, center);
+            @include display (flex);
+            @include flex(row);
+            text-align: end;
+        }
+    }
+
+    .main-nosotros{
+        &__section--article--{
+            &image{
+                @include wid(35%);
+                @include pad(5px);
+            }
+            &text{
+                @include wid(50%);
+                @include marpad(0, 5px);
+                @include texts(2vw, 500, rgb(0,0,0));
+            }
+        }
+        &__founders--div--{
+            &img{
+                @include wid(50%)
+            }
+            &name{
+                @include texts(2vw, 600, rgba(55, 106, 109));
+                @include marpad (0, 5px);
+            }
+            &position{
+                @include texts(1.5vw, 400, rgba(114, 114, 114));
+                @include marpad(0,0);
+            }
+        }
+    }
+/* ----------------NOSOTROS=END----------------- */
 }

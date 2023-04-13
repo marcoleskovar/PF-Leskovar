@@ -39,7 +39,7 @@
             @include display(flex);
             @include flex(col);
             &--img{
-                width: 60%
+                @include wid(60%);
             }
             &--name{
                 @include marpad(0, 5px);
