@@ -1,12 +1,12 @@
-    .main-productos{
 /* ----------------PRODUCTOS=START----------------- */
+   .main-productos{
         @include justali(center,center);
         @include display (flex);
         @include flex(col);
         background-color: map-get($map: $paleta, $key: catorce);
         overflow: hidden;
         &__list-functions{
-            justify-content: start;
+            justify-content: space-between;
             @include display(flex);
             @include flex(row);
             &--div{
@@ -113,11 +113,14 @@
                 border-radius: 15px 0 0 0;
             }
         }
-/* ----------------PRODUCTOS=END----------------- */
+        .filt{
+            justify-content: end;
+            @include mar(0 0 0 0);
+        }
     }
 
+/* ---------BREAKPOINT-MOBILE-PRO = START--------- */
 @media (min-width:576px){
-/* ----------------PRODUCTOS=START----------------- */
     .main-productos{
         &__section{
             &--ul{
@@ -147,12 +150,11 @@
             }
         }
     }
-/* ----------------PRODUCTOS=END----------------- */
 }
+/* ---------BREAKPOINT-MOBILE-PRO = END--------- */
 
-
+/* ---------BREAKPOINT-TABLET-PRO = START--------- */
 @media (min-width:768px){
-/* ----------------PRODUCTOS=START----------------- */
     .main-productos{
         &__section{
             &--ul{
@@ -182,11 +184,11 @@
             }
         }
     }
-/* ----------------PRODUCTOS=END----------------- */
 }
+/* ---------BREAKPOINT-TABLET-PRO = END--------- */
 
+/* ---------BREAKPOINT-DESKTOP-PRO = START--------- */
 @media (min-width:992px){
-/* ----------------PRODUCTOS=START----------------- */
     .main-productos{
         &__list-functions{
             &--div{
@@ -221,5 +223,6 @@
             }
         }
     }
-/* ----------------PRODUCTOS=END----------------- */
 }
+/* ---------BREAKPOINT-DESKTOP-PRO = END--------- */
+/* ----------------PRODUCTOS=END----------------- */

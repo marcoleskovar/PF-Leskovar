@@ -23,6 +23,7 @@
             }
             &--full{
                 @include widhei(300px, auto);
+                @include mar(0 0 0 15px);
                 @include display(no);
                 &:hover{
                     transform:scale(1.03);
@@ -156,7 +157,7 @@
                 @include marpad (0, 7px);
                 text-decoration:none;
                 &:hover a{
-                    @include texts(6vw, 800, rgba(55, 106, 109));
+                    @include texts(6.5vw, 800, rgba(55, 106, 109));
                     text-decoration: none;
                     transform: scale(1.04);
                 }
@@ -357,6 +358,15 @@
                 }
             }
         }
+        &text{
+            &--ul{
+                &--subpages-text-only{
+                    &:hover a{
+                        @include texts(5vw, 800, rgba(55, 106, 109));
+                    }
+                }
+            }
+        }
         &ul{
             @include flex(row);
             &--li{
@@ -436,8 +446,17 @@
                 }
             }
         }
-        &text--ul--subpages-text-only a{
-            @include fs(4vw);
+        &text{
+            &--ul{
+                &--subpages-text-only{
+                    &:hover a{
+                        @include texts(4.5vw, 800, rgba(55, 106, 109));
+                    }
+                    & a{
+                        @include fs(4vw);
+                    }
+                }
+            }
         }
     }
 
