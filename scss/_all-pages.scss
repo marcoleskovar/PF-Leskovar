@@ -80,7 +80,7 @@
                 background-color: map-get($map: $paleta, $key: dos);
                 transform:scale(1.03);
                 & h4{
-                    @include texts(4vw, 800, rgba(145, 136, 104));
+                    @include texts(4vw, 800, rgba(255, 251, 252));
                 }
             }
             &--svg{
