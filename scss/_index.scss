@@ -1,3 +1,4 @@
+/* ----------------INDEX=START----------------- */
 .main-index{
     @include widhei(100vw, 100vh);
     @include justali(center, center);
@@ -92,8 +93,8 @@
     }
 }
 
+/* ---------BREAKPOINT-MOBILE-IND = START--------- */
 @media (min-width:576px){
-/* ----------------INDEX=START----------------- */
     .main-index__text h1{
         @include fs(11vw);
     }
@@ -108,11 +109,11 @@
             @include fs (5.5vw);
         }
     }
-/* ----------------INDEX=END----------------- */
 }
+/* ---------BREAKPOINT-MOBILE-IND = END--------- */
 
+/* ---------BREAKPOINT-TABLET-IND = START--------- */
 @media (min-width:768px){
-/* ----------------INDEX=START----------------- */
     .main-index__text h1{
         @include fs(9.5vw);
     }
@@ -124,11 +125,11 @@
             @include fs(4.5vw);
         }
     }
-/* ----------------INDEX=END----------------- */
 }
+/* ---------BREAKPOINT-TABLET-IND = END--------- */
 
+/* ---------BREAKPOINT-DESKTOP-IND = START--------- */
 @media (min-width:992px){
-/* ----------------INDEX=START----------------- */
     .main-index__text h1{
         @include texts(5.5vw, 800, rgba(255, 251, 252));
     }
@@ -165,5 +166,6 @@
             }
         }
     }
-/* ----------------INDEX=END----------------- */
 }
+/* ---------BREAKPOINT-DESKTOP-IND = END--------- */
+/* ----------------INDEX=END----------------- */

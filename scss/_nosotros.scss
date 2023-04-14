@@ -1,3 +1,4 @@
+/* ---------------NOSOTROS=START----------------- */
 .main-nosotros{
     @include justali (center, center);
     @include display(flex);
@@ -53,16 +54,16 @@
     }
 }
 
+/* ---------BREAKPOINT-MOBILE-NOS = START--------- */
 @media (min-width:576px){
-/* ----------------NOSOTROS=START----------------- */
     .page-main-text{
         font-size: 11vw;
     }
-/* ----------------NOSOTROS=END----------------- */
 }
+/* ---------BREAKPOINT-MOBILE-NOS = END--------- */
 
+/* ---------BREAKPOINT-TABLET-NOS = START--------- */
 @media (min-width:768px){
-/* ----------------NOSOTROS=START----------------- */
     .page-main-text{
         @include fs(10vw);
     }
@@ -87,11 +88,11 @@
             }
         }
     }
-/* ----------------NOSOTROS=END----------------- */
 }
+/* ---------BREAKPOINT-TABLET-NOS = END--------- */
 
+/* ---------BREAKPOINT-DESKTOP-NOS = START--------- */
 @media (min-width:992px){
-/* ----------------NOSOTROS=START----------------- */
     .page-main-text{
         @include fs(4vw);
     }
@@ -143,5 +144,6 @@
             }
         }
     }
-/* ----------------NOSOTROS=END----------------- */
 }
+/* ---------BREAKPOINT-DESKTOP-NOS = END--------- */
+/* ---------------NOSOTROS=END----------------- */

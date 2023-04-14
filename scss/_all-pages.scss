@@ -1,3 +1,4 @@
+/* ----------------ALL-PAGES=START----------------- */
 .header{
     @include widhei(100%, auto);
     @include justali(center, center);
@@ -267,6 +268,7 @@
         textarea{
             @include hei(15vh);
             resize: none;
+            overflow: scroll;
         }
         input[type="submit"]{
             @include widhei(100%, auto);
@@ -330,8 +332,8 @@
     @include texts(12vw, 600, rgba(114, 114, 114));
 }
 
+/* ---------BREAKPOINT-MOBILE-ALL = START--------- */
 @media (min-width:576px){
-/* ALL-PAGES = START */
     .header__first--{
         &nav-sup--{
             &lupa-1{
@@ -389,11 +391,11 @@
         @include fs(5vw);
     }
     }
-/* ALL-PAGES = END */
 }
+/* ---------BREAKPOINT-MOBILE-ALL = END--------- */
 
+/* ---------BREAKPOINT-TABLET-ALL = START--------- */
 @media (min-width:768px){
-/* ALL-PAGES = START */
     .header__first--{
         &logo--{
             &mini{
@@ -484,11 +486,11 @@
             @include fs(4vw);
          }
     }
-/* ALL-PAGES = END */
 }
+/* ---------BREAKPOINT-TABLET-ALL = END--------- */
 
+/* ---------BREAKPOINT-DESKTOP-ALL = START--------- */
 @media (min-width:992px){
-/* ALL-PAGES = START */
     .header{
         @include display(flex);
         @include flex(col);
@@ -648,5 +650,6 @@
             @include fs(22px);
         }
     }
-/* ALL-PAGES = END */
 }
+/* ---------BREAKPOINT-DESKTOP-ALL = END--------- */
+/* ----------------ALL-PAGES=END----------------- */

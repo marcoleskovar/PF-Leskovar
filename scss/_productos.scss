@@ -58,11 +58,11 @@
                         }
                         & h2{
                             @include pad(5px 5px 0 5px);
-                            @include fs(250%);
+                            @include fs(7.3vw);
                         }
                         & h4{
                             @include pad(5px 5px 0 5px);
-                            @include fs(150%);
+                            @include fs(4.5vw);
                         }
                     }
                     &--a{

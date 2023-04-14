@@ -1,0 +1,137 @@
+/* ----------------CARRITO=START----------------- */
+.main-carrito{
+    @include justali(center,center);
+    @include display (flex);
+    @include flex(col);
+    background-color: map-get($map: $paleta, $key: catorce);
+    overflow: hidden;
+    &__list-functions{
+        justify-content: start;
+        @include display(flex);
+        @include flex(row);
+        &--div{
+            @include justali (center, center);
+            @include mar(0 30px 5px 0);
+            @include display (flex);
+            @include flex(row);
+            cursor: pointer;
+            &--text{
+                @include marpad(0, 0 5px 0 0);
+                @include texts(4vw, 600, rgba(255, 251, 252));
+            }
+            &--img{
+                @include wid(4vw);
+                color: map-get($map: $paleta, $key: cinco);
+            }
+            &:hover{
+                & h4{
+                    color: map-get($map: $paleta, $key: dos);
+                }
+                & svg{
+                    color: map-get($map: $paleta, $key:  dos);
+                }
+            }
+        }
+    }
+    &__section{
+        @include mar(0 20px 0px 20px);
+        @include display(flex);
+        @include flex( col);
+        background-color: map-get($map: $paleta, $key: cinco);
+        border-radius: 15px;
+        &--ul{
+            @include marpad(0,0);
+            @include display (flex);
+            @include flex (col);
+            list-style: none;
+            border-radius: 15px;
+            &--li{
+                @include wid(auto);
+                justify-content: space-between;
+                @include display(flex);
+                @include flex(row);
+                border-bottom: 2px solid rgb(185, 185, 185);
+                background-color: map-get($map: $paleta, $key: cinco);
+                &:hover{
+                    background-color: map-get($map: $paleta, $key: quince);
+                }
+                &--a{
+                    @include wid(auto);
+                    align-items:  center;
+                    @include display(flex);
+                    @include flex(row);
+                    text-decoration: none;
+                    &:hover{
+                        background-color: map-get($map: $paleta, $key: quince);
+                        border-radius: 15px 15px 15px 15px;
+                    }
+                    &:active{
+                        & img{
+                            @include hei(auto);
+                            background-color: map-get($map: $paleta, $key: dieciseis);
+                        }
+                        & h2{
+                            @include pad(5px 5px 0 5px);
+                            @include fs(4.8vw);
+                        }
+                    }
+                    &--text{
+                        @include texts(4.5vw, 500, rgba(55, 106, 109));
+                        @include marpad(0, 5px);
+                        text-align: start
+                    }
+                    &--img{
+                        @include widhei(30%,auto);
+                        @include pad(0 10px 0 0);
+                        background-color: map-get($map: $paleta, $key: cinco);
+                    }
+                }
+                &--delete{
+                    @include hei(auto);
+                    @include pad(10px 10px 0 0);
+                    & svg{
+                        @include wid(6vw);
+                        cursor: pointer;
+                        &:hover path{
+                            color: map-get($map: $paleta, $key: dos);
+                        }
+                        &:active path{
+                            transform:scale(1.07);
+                        }
+                        & path{
+                            color: map-get($map: $paleta, $key: uno);
+                        }
+                    }
+                }
+            }
+        }
+        &--button-carrito{
+            @include fs(4vw);
+            @include marpad(10px, 5px);
+            color: map-get($map: $paleta, $key: cinco);
+            background-color: map-get($map: $paleta, $key: diez);
+            border: 2px solid rgba(255, 251, 252);
+            border-radius: 15px 15px 15px 15px;
+            &:hover{
+                background-color: map-get($map: $paleta, $key: diecisiete);
+            }
+            &:active{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .first-carrito-li{
+        border-radius: 15px 15px 0 0;
+            & img{
+                border-radius: 15px 0 0 0;
+            }
+    }
+    .last-carrito-li{
+        border-radius: 0 0 15px 15px;
+        border: none;
+        & img{
+            border-radius: 0 0 0 15px;
+        }
+    }
+}

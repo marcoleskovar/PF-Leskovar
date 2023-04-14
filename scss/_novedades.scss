@@ -1,6 +1,5 @@
 /* ----------------NOVEDADES=START----------------- */
 .main-novedades{
-
     @include justali(center,center);
     @include display (flex);
     @include flex(col);
@@ -83,18 +82,17 @@
                     &--div{
                         @include widhei(auto, 100%);
                         @include justali(center,start);
-                        @include pad(10px);
                         @include display(flex);
                         @include flex(col);
                         text-align:start;
                         &--title{
                             @include texts(4.5vw, 800, rgba(55, 106, 109));
-                            @include marpad(0, 5px);
+                            @include marpad(0, 15px 15px 0 15px);
                             text-align: start
                         }
                         &--desc{
                             @include texts(3.3vw, 300, rgba(68, 133, 136));
-                            @include marpad(0, 5px);
+                            @include marpad(0, 0 15px 15px 15px);
                         }
                     }
                     &--img{
@@ -231,10 +229,10 @@
         &__list-functions{
             &--div{
                 &--text{
-                    @include texts(1.5vw, 600, rgba(255, 251, 252));
+                    @include texts(1.4vw, 600, rgba(255, 251, 252));
                 }
                 &--img{
-                    @include wid(1.5vw);
+                    @include wid(1.4vw);
                 }
             }
         }
@@ -252,14 +250,14 @@
                         }
                         &--div{
                             &--title{
-                                @include texts(2.5vw, 800, rgba(55, 106, 109));
+                                @include texts(2.5vw, 600, rgba(55, 106, 109));
                             }
                             &--desc{
-                                @include texts(1.7vw, 300, rgba(68, 133, 136));
+                                @include texts(1.5vw, 300, rgba(68, 133, 136));
                             }
                         }
                         &--img{
-                            @include widhei(20%,auto);
+                            @include widhei(15%,auto);
                         }
                     }
                     &--x{
@@ -272,5 +270,5 @@
         }
     }
 }
-/* ---------BREAKPOINT-DESKTOP-NOV = START--------- */
+/* ---------BREAKPOINT-DESKTOP-NOV = END--------- */
 /* ----------------NOVEDADES=END----------------- */
