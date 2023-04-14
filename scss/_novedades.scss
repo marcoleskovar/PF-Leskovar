@@ -1,27 +1,16 @@
 /* ----------------NOVEDADES=START----------------- */
 .main-novedades{
-    @include justali(center,center);
-    @include display (flex);
-    @include flex(col);
-    background-color: map-get($map: $paleta, $key: catorce);
-    overflow: hidden;
+    @extend .main-productos;
     &__list-functions{
+        @extend .main-productos__list-functions;
         justify-content: start;
-        @include display(flex);
-        @include flex(row);
         &--div{
-            @include justali (center, center);
-            @include mar(0 30px 5px 0);
-            @include display (flex);
-            @include flex(row);
-            cursor: pointer;
+            @extend .main-productos__list-functions--div;
             &--text{
-                @include marpad(0, 0 5px 0 0);
-                @include texts(4vw, 600, rgba(255, 251, 252));
+                @extend .main-productos__list-functions--div--text;
             }
             &--img{
-                @include wid(4vw);
-                color: map-get($map: $paleta, $key: cinco);
+                @extend .main-productos__list-functions--div--img;
             }
             &:hover{
                 & h4{
@@ -34,33 +23,19 @@
         }
     }
     &__section{
-        @include mar(0 20px 20px 20px);
-        @include display(flex);
-        @include flex( col);
-        background-color: map-get($map: $paleta, $key: cinco);
-        border-radius: 15px;
+        @extend .main-productos__section;
         &--ul{
-            @include marpad(0,0);
-            @include display (flex);
-            @include flex (col);
-            list-style: none;
-            border-radius: 15px;
+            @extend .main-productos__section--ul;
             &--li{
-                @include wid(auto);
+                @extend .main-productos__section--ul--li;
                 justify-content: space-between;
                 @include display(flex);
                 @include flex(row);
-                border-bottom: 2px solid rgb(185, 185, 185);
-                background-color: map-get($map: $paleta, $key: cinco);
                 &:hover{
                     background-color: map-get($map: $paleta, $key: quince);
                 }
                 &--a{
-                    @include wid(auto);
-                    align-items:  center;
-                    @include display(flex);
-                    @include flex(row);
-                    text-decoration: none;
+                    @extend .main-productos__section--ul--li--a;
                     &:hover{
                         background-color: map-get($map: $paleta, $key: quince);
                         border-radius: 15px 15px 15px 15px;
@@ -96,13 +71,13 @@
                         }
                     }
                     &--img{
-                        @include widhei(30%,auto);
+                        @extend .main-productos__section--ul--li--a--img;
                         @include pad(0 10px 0 0);
-                        background-color: map-get($map: $paleta, $key: cinco);
                     }
                 }
                 &--x{
                     @include hei(auto);
+                    @include pad(10px 10px 0 0);
                     & svg{
                         @include wid(10vw);
                         cursor: pointer;
@@ -121,7 +96,7 @@
         }
     }
     .first-novedades-li{
-        border-radius: 15px 15px 0 0;
+        @extend .first-product-li;
             & img{
                 border-radius: 15px 0 0 0;
             }
@@ -137,7 +112,6 @@
 /* ---------BREAKPOINT-MOBILE-NOV = START--------- */
 @media (min-width:576px){
     .main-novedades{
-
         &__list-functions{
             &--div{
                 &--text{

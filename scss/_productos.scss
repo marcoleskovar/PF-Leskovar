@@ -36,7 +36,7 @@
         &__section{
             @include mar(0 20px 20px 20px);
             @include display(flex);
-            @include flex( col);
+            @include flex(col);
             background-color: map-get($map: $paleta, $key: cinco);
             border-radius: 15px;
             &--ul{
@@ -46,7 +46,7 @@
                 list-style: none;
                 border-radius: 15px;
                 &--li{
-                    @include wid(100%);
+                    @include wid(auto);
                     border-bottom: 2px solid rgb(185, 185, 185);
                     background-color: map-get($map: $paleta, $key: cinco);
                     &:hover{
@@ -66,8 +66,8 @@
                         }
                     }
                     &--a{
-                        @include wid(100%);
-                        align-items:  center;
+                        @include wid(auto);
+                        align-items: center;
                         @include display(flex);
                         @include flex(row);
                         text-decoration: none;
@@ -85,7 +85,7 @@
                             @include marpad(0, 5px);
                         }
                         &--img{
-                            @include wid(40%);
+                            @include widhei(40%, auto);
                             @include pad(0 20px 0 0);
                             background-color: map-get($map: $paleta, $key: cinco);
                         }

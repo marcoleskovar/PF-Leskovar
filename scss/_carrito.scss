@@ -1,27 +1,16 @@
 /* ----------------CARRITO=START----------------- */
 .main-carrito{
-    @include justali(center,center);
-    @include display (flex);
-    @include flex(col);
-    background-color: map-get($map: $paleta, $key: catorce);
-    overflow: hidden;
+    @extend .main-novedades;
     &__list-functions{
-        justify-content: start;
-        @include display(flex);
-        @include flex(row);
+        @extend .main-novedades__list-functions;
         &--div{
-            @include justali (center, center);
-            @include mar(0 30px 5px 0);
-            @include display (flex);
-            @include flex(row);
-            cursor: pointer;
+            @extend .main-novedades__list-functions--div;
             &--text{
                 @include marpad(0, 0 5px 0 0);
                 @include texts(4vw, 600, rgba(255, 251, 252));
             }
             &--img{
-                @include wid(4vw);
-                color: map-get($map: $paleta, $key: cinco);
+                @extend .main-novedades__list-functions--div--img;
             }
             &:hover{
                 & h4{
@@ -34,17 +23,10 @@
         }
     }
     &__section{
+        @extend .main-novedades__section;
         @include mar(0 20px 0px 20px);
-        @include display(flex);
-        @include flex( col);
-        background-color: map-get($map: $paleta, $key: cinco);
-        border-radius: 15px;
         &--ul{
-            @include marpad(0,0);
-            @include display (flex);
-            @include flex (col);
-            list-style: none;
-            border-radius: 15px;
+            @extend .main-novedades__section--ul;
             &--li{
                 @include wid(auto);
                 justify-content: space-between;
@@ -56,11 +38,7 @@
                     background-color: map-get($map: $paleta, $key: quince);
                 }
                 &--a{
-                    @include wid(auto);
-                    align-items:  center;
-                    @include display(flex);
-                    @include flex(row);
-                    text-decoration: none;
+                    @extend .main-novedades__section--ul--li--a;
                     &:hover{
                         background-color: map-get($map: $paleta, $key: quince);
                         border-radius: 15px 15px 15px 15px;
@@ -87,8 +65,7 @@
                     }
                 }
                 &--delete{
-                    @include hei(auto);
-                    @include pad(10px 10px 0 0);
+                    @extend .main-novedades__section--ul--li--x;
                     & svg{
                         @include wid(6vw);
                         cursor: pointer;
@@ -106,7 +83,7 @@
             }
         }
         &--button-carrito{
-            @include fs(4vw);
+            @extend .main-productos__section--button-mas;
             @include marpad(10px, 5px);
             color: map-get($map: $paleta, $key: cinco);
             background-color: map-get($map: $paleta, $key: diez);
