@@ -1052,10 +1052,10 @@ html {
 /* ---------BREAKPOINT-MOBILE-PRO = START--------- */
 @media (min-width: 576px) {
   .main-productos__section--ul--li:active h2 {
-    font-size: 350%;
+    font-size: 6.6vw;
   }
   .main-productos__section--ul--li:active h4 {
-    font-size: 190%;
+    font-size: 3.6vw;
   }
   .main-productos__section--ul--li--a--div--product-name {
     font-size: 6.5vw;
@@ -1075,10 +1075,10 @@ html {
 /* ---------BREAKPOINT-TABLET-PRO = START--------- */
 @media (min-width: 768px) {
   .main-productos__section--ul--li:active h2 {
-    font-size: 340%;
+    font-size: 6.1vw;
   }
   .main-productos__section--ul--li:active h4 {
-    font-size: 180%;
+    font-size: 3.1vw;
   }
   .main-productos__section--ul--li--a--div--product-name {
     font-size: 6vw;

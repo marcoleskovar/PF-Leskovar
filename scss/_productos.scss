@@ -127,10 +127,10 @@
                 &--li{
                     &:active{
                         & h2{
-                            @include fs(350%);
+                            @include fs(6.6vw);
                         }
                         & h4{
-                            @include fs(190%);
+                            @include fs(3.6vw);
                         }
                     }
                     &--a{
@@ -161,10 +161,10 @@
                 &--li{
                     &:active{
                         & h2{
-                            @include fs(340%);
+                            @include fs(6.1vw);
                         }
                         & h4{
-                            @include fs(180%);
+                            @include fs(3.1vw);
                         }
                     }
                     &--a{
