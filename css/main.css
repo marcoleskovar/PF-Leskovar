@@ -825,10 +825,14 @@ html {
   margin: 0;
   padding: 5px 0 0 0;
   text-align: center;
-  border-top: 1px solid rgb(55, 106, 109);
   position: relative;
   top: -10px;
   left: 0;
+  background-image: linear-gradient(rgb(55, 106, 109), rgb(55, 106, 109));
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
 }
 .section-1-index div {
   margin: 10px 0 10px 0;
@@ -900,6 +904,9 @@ html {
   }
   .section-1-index__article-1--figure:hover {
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+  }
+  .section-1-index__article-1--figure:hover figcaption {
+    background-size: 100% 2px;
   }
   .section-1-index__article-1--figure:active {
     transform: scale(1.02);

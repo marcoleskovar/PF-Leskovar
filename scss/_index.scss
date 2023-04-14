@@ -71,8 +71,12 @@
                 @include texts(6vw, 700, rgba(55, 106, 109));
                 @include marpad(0, 5px 0 0 0 );
                 text-align: center;
-                border-top: 1px solid rgba(55, 106, 109);
-                @include position(relative, -10px, 0)
+                @include position(relative, -10px, 0);
+                background-image: linear-gradient(rgba(55, 106, 109), rgba(55, 106, 109));
+                background-position: 100% 0%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
             }
         }
     }
@@ -148,6 +152,9 @@
             justify-content: center;
             &:hover{
                 box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
+                & figcaption{
+                    background-size: 100% 2px;
+                }
             }
             &:active{
                 transform: scale(1.02);
