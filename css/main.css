@@ -65,7 +65,7 @@ html {
 .header__first--logo--full {
   width: 300px;
   height: auto;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 5px;
   display: none;
 }
 .header__first--logo--full:hover {
@@ -1514,6 +1514,96 @@ html {
   border-radius: 0 0 0 15px;
 }
 
+/* ---------BREAKPOINT-MOBILE-CAR = START--------- */
+@media (min-width: 576px) {
+  .main-carrito__list-functions--div--text {
+    font-size: 3vw;
+    font-weight: 600;
+    color: rgb(255, 251, 252);
+  }
+  .main-carrito__list-functions--div--img {
+    width: 3vw;
+  }
+  .main-carrito__section--ul--li--a:active h2 {
+    font-size: 4.1vw;
+  }
+  .main-carrito__section--ul--li--a--text {
+    font-size: 4vw;
+    font-weight: 500;
+    color: rgb(55, 106, 109);
+  }
+  .main-carrito__section--ul--li--a--img {
+    width: 28%;
+    height: auto;
+  }
+  .main-carrito__section--ul--li--delete svg {
+    width: 5vw;
+  }
+  .main-carrito__section--button-carrito {
+    font-size: 3.8vw;
+  }
+}
+/* ---------BREAKPOINT-MOBILE-CAR = END--------- */
+/* ---------BREAKPOINT-TABLET-CAR = START--------- */
+@media (min-width: 768px) {
+  .main-carrito__list-functions--div--text {
+    font-size: 2.8vw;
+    font-weight: 600;
+    color: rgb(255, 251, 252);
+  }
+  .main-carrito__list-functions--div--img {
+    width: 2.8vw;
+  }
+  .main-carrito__section--ul--li--a:active h2 {
+    font-size: 3.6vw;
+  }
+  .main-carrito__section--ul--li--a--text {
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: rgb(55, 106, 109);
+  }
+  .main-carrito__section--ul--li--a--img {
+    width: 22%;
+    height: auto;
+  }
+  .main-carrito__section--ul--li--delete svg {
+    width: 4vw;
+  }
+  .main-carrito__section--button-carrito {
+    font-size: 3vw;
+  }
+}
+/* ---------BREAKPOINT-TABLET-CAR = END--------- */
+/* ---------BREAKPOINT-DESKTOP-CAR = START--------- */
+@media (min-width: 992px) {
+  .main-carrito__list-functions--div--text {
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: rgb(255, 251, 252);
+  }
+  .main-carrito__list-functions--div--img {
+    width: 1.4vw;
+  }
+  .main-carrito__section--ul--li--a:active h2 {
+    font-size: 2.8vw;
+  }
+  .main-carrito__section--ul--li--a--text {
+    font-size: 2.7vw;
+    font-weight: 500;
+    color: rgb(55, 106, 109);
+  }
+  .main-carrito__section--ul--li--a--img {
+    width: 15%;
+    height: auto;
+  }
+  .main-carrito__section--ul--li--delete svg {
+    width: 3vw;
+  }
+  .main-carrito__section--button-carrito {
+    font-size: 2vw;
+  }
+}
+/* ---------BREAKPOINT-DESKTOP-CAR = END--------- */
 /* ---------------NOSOTROS=START----------------- */
 .main-nosotros {
   justify-content: center;

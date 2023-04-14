@@ -24,7 +24,7 @@
             }
             &--full{
                 @include widhei(300px, auto);
-                @include mar(0 0 0 15px);
+                @include mar(0 0 0 5px);
                 @include display(no);
                 &:hover{
                     transform:scale(1.03);

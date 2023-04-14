@@ -135,3 +135,135 @@
         }
     }
 }
+
+/* ---------BREAKPOINT-MOBILE-CAR = START--------- */
+@media (min-width:576px){
+    .main-carrito{
+        &__list-functions{
+            &--div{
+                &--text{
+                    @include texts(3vw, 600, rgba(255, 251, 252));
+                }
+                &--img{
+                    @include wid(3vw);
+                }
+            }
+        }
+        &__section{
+            &--ul{
+                &--li{
+                    &--a{
+                        &:active{
+                            & h2{
+                                @include fs(4.1vw);
+                            }
+                        }
+                        &--text{
+                            @include texts(4vw, 500, rgba(55, 106, 109));
+                        }
+                        &--img{
+                            @include widhei(28%,auto);
+                        }
+                    }
+                    &--delete{
+                        & svg{
+                            @include wid(5vw);
+                        }
+                    }
+                }
+            }
+            &--button-carrito{
+                @include fs(3.8vw);
+            }
+        }
+    }
+}
+/* ---------BREAKPOINT-MOBILE-CAR = END--------- */
+
+/* ---------BREAKPOINT-TABLET-CAR = START--------- */
+@media (min-width:768px){
+    .main-carrito{
+        &__list-functions{
+            &--div{
+                &--text{
+                    @include texts(2.8vw, 600, rgba(255, 251, 252));
+                }
+                &--img{
+                    @include wid(2.8vw);
+                }
+            }
+        }
+        &__section{
+            &--ul{
+                &--li{
+                    &--a{
+                        &:active{
+                            & h2{
+                                @include fs(3.6vw);
+                            }
+                        }
+                        &--text{
+                            @include texts(3.5vw, 500, rgba(55, 106, 109));
+                        }
+                        &--img{
+                            @include widhei(22%,auto);
+                        }
+                    }
+                    &--delete{
+                        & svg{
+                            @include wid(4vw);
+                        }
+                    }
+                }
+            }
+            &--button-carrito{
+                @include fs(3vw);
+            }
+        }
+    }
+}
+/* ---------BREAKPOINT-TABLET-CAR = END--------- */
+
+/* ---------BREAKPOINT-DESKTOP-CAR = START--------- */
+@media (min-width:992px){
+    .main-carrito{
+        &__list-functions{
+            &--div{
+                &--text{
+                    @include texts(1.4vw, 600, rgba(255, 251, 252));
+                }
+                &--img{
+                    @include wid(1.4vw);
+                }
+            }
+        }
+        &__section{
+            &--ul{
+                &--li{
+                    &--a{
+                        &:active{
+                            & h2{
+                                @include fs(2.8vw);
+                            }
+                        }
+                        &--text{
+                            @include texts(2.7vw, 500, rgba(55, 106, 109));
+                        }
+                        &--img{
+                            @include widhei(15%,auto);
+                        }
+                    }
+                    &--delete{
+                        & svg{
+                            @include wid(3vw);
+                        }
+                    }
+                }
+            }
+            &--button-carrito{
+                @include fs(2vw);
+            }
+        }
+    }
+}
+/* ---------BREAKPOINT-DESKTOP-CAR = END--------- */

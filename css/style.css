@@ -232,16 +232,16 @@ html{
    margin: 4px;
 }
 
-.nav__text__ul{
+.nav__text--ul{
    list-style: none;
 }
-.nav__text__ul--subpages-text-only{
+.nav__text--ul--subpages-text-only{
    width: 100%;
    padding: 7px;
    text-decoration: none;
    }
 
-      .nav__text__ul--subpages-text-only a{
+      .nav__text--ul--subpages-text-only a{
          font-size: 6vw;
          font-weight: 500;
          color: rgb(193, 193, 193);
@@ -249,7 +249,7 @@ html{
          text-decoration: none;
       }
 
-         .nav__text__ul--subpages-text-only:hover a{
+         .nav__text--ul--subpages-text-only:hover a{
             color: rgb(54, 110, 174);
             text-decoration: underline;
             transform:scale(1.04)
@@ -743,7 +743,7 @@ flex-direction: column;
                      width: 10vw;
                   }
 
-                     .nav__text__ul--subpages-text-only a{
+                     .nav__text--ul--subpages-text-only a{
                         font-size: 4.5vw;
                      }
    /* HEADER = END */
@@ -871,7 +871,7 @@ flex-direction: column;
                input[type="submit"]{
                   font-size: 4vw;
                }
-
+               __
                   .footer__redes--ul--li a svg{
                      width: 9vw;
                   }
@@ -944,7 +944,7 @@ flex-direction: column;
             width: 130px;
          }
 
-            .header__first--nav-supupup{
+            .header__first--nav-sup{
                display: none;
             }
 
