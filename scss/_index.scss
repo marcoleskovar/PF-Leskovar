@@ -36,7 +36,7 @@
     padding: 10px 30px 10px 30px;
     @include display(flex);
     @include flex(col);
-    background-color: map-get($map: $paleta, $key: catorce);
+    background-color: map-get($map: $colors, $key: b-tres);
     overflow: hidden;
     z-index: 15000;
     &__text{
@@ -57,7 +57,7 @@
             @include marpad(10px, 0);
             @include display(flex);
             @include flex(col);
-            background-color: map-get($map: $paleta, $key: cinco);
+            background-color: map-get($map: $colors, $key: b-dos);
             border-radius: 5px;
             cursor: pointer;
             &:active{
@@ -73,7 +73,7 @@
                 text-align: center;
                 @include position(relative, -10px, 0);
                 background-image: linear-gradient(rgba(55, 106, 109), rgba(55, 106, 109));
-                background-position: 100% 0%;
+                background-position: 50% 0%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
                 transition: background-size .3s;
@@ -86,9 +86,9 @@
             @include texts(5.5vw, 500,  rgb(110, 110, 110));
             text-decoration: none;
             margin-bottom: 5px;
-            color: map-get($map: $paleta, $key: trece);
+            color: map-get($map: $colors, $key: g-cinco);
             &:hover{
-                color: map-get($map: $paleta, $key: nueve);
+                color: map-get($map: $colors, $key: ab-dos);
             }
             &:active{
                 text-decoration: underline;
@@ -140,7 +140,7 @@
 
     #ProDest{
         @include widhei(100%, 80px);
-        background-color: map-get($map: $paleta, $key: catorce);
+        background-color: map-get($map: $colors, $key: b-tres);
     }
 
     .section-1-index{
@@ -169,7 +169,7 @@
         & div a{
             @include fs(20px);
             &:hover{
-                color: map-get($map: $paleta, $key: nueve);
+                color: map-get($map: $colors, $key: ab-dos);
             }
         }
     }

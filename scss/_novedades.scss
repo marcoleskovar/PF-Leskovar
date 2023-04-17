@@ -14,10 +14,10 @@
             }
             &:hover{
                 & h4{
-                    color: map-get($map: $paleta, $key: dos);
+                    color: map-get($map: $colors, $key: ab-uno);
                 }
                 & svg{
-                    color: map-get($map: $paleta, $key:  dos);
+                    color: map-get($map: $colors, $key:  dos);
                 }
             }
         }
@@ -27,23 +27,28 @@
         &--ul{
             @extend .main-productos__section--ul;
             &--li{
-                @extend .main-productos__section--ul--li;
+                @include wid(auto);
+                border-bottom: 2px solid rgb(185, 185, 185);
+                background-color: map-get($map: $colors, $key: b-dos);
                 justify-content: space-between;
                 @include display(flex);
                 @include flex(row);
                 &:hover{
-                    background-color: map-get($map: $paleta, $key: quince);
+                    background-color: map-get($map: $colors, $key: b-tres);
+                    & a{
+                        background-color: map-get($map: $colors, $key: b-tres);
+                    }
                 }
                 &--a{
                     @extend .main-productos__section--ul--li--a;
                     &:hover{
-                        background-color: map-get($map: $paleta, $key: quince);
+                        background-color: map-get($map: $colors, $key: b-dos);
                         border-radius: 15px 15px 15px 15px;
                     }
                     &:active{
                         & img{
                             @include hei(auto);
-                            background-color: map-get($map: $paleta, $key: dieciseis);
+                            background-color: map-get($map: $colors, $key: b-tres);
                         }
                         & h2{
                             @include pad(5px 5px 0 5px);
@@ -82,13 +87,13 @@
                         @include wid(10vw);
                         cursor: pointer;
                         &:hover path{
-                            color: map-get($map: $paleta, $key: dos);
+                            color: map-get($map: $colors, $key: ab-uno);
                         }
                         &:active path{
                             transform:scale(1.07);
                         }
                         & path{
-                            color: map-get($map: $paleta, $key: uno);
+                            color: map-get($map: $colors, $key: ab-nueve);
                         }
                     }
                 }
@@ -219,7 +224,7 @@
                                 @include fs(2.6vw);
                             }
                             & p{
-                                @include fs(1.9vw);
+                                @include fs(1.6vw);
                             }
                         }
                         &--div{

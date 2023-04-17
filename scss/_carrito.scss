@@ -14,10 +14,10 @@
             }
             &:hover{
                 & h4{
-                    color: map-get($map: $paleta, $key: dos);
+                    color: map-get($map: $colors, $key: ab-uno);
                 }
                 & svg{
-                    color: map-get($map: $paleta, $key:  dos);
+                    color: map-get($map: $colors, $key:  dos);
                 }
             }
         }
@@ -33,20 +33,20 @@
                 @include display(flex);
                 @include flex(row);
                 border-bottom: 2px solid rgb(185, 185, 185);
-                background-color: map-get($map: $paleta, $key: cinco);
+                background-color: map-get($map: $colors, $key: b-dos);
                 &:hover{
-                    background-color: map-get($map: $paleta, $key: quince);
+                    background-color: map-get($map: $colors, $key: b-dos);
                 }
                 &--a{
                     @extend .main-novedades__section--ul--li--a;
                     &:hover{
-                        background-color: map-get($map: $paleta, $key: quince);
+                        background-color: map-get($map: $colors, $key: b-dos);
                         border-radius: 15px 15px 15px 15px;
                     }
                     &:active{
                         & img{
                             @include hei(auto);
-                            background-color: map-get($map: $paleta, $key: dieciseis);
+                            background-color: map-get($map: $colors, $key: b-tres);
                         }
                         & h2{
                             @include pad(5px 5px 0 5px);
@@ -61,7 +61,7 @@
                     &--img{
                         @include widhei(30%,auto);
                         @include pad(0 10px 0 0);
-                        background-color: map-get($map: $paleta, $key: cinco);
+                        background-color: map-get($map: $colors, $key: b-dos);
                     }
                 }
                 &--delete{
@@ -70,13 +70,13 @@
                         @include wid(6vw);
                         cursor: pointer;
                         &:hover path{
-                            color: map-get($map: $paleta, $key: dos);
+                            color: map-get($map: $colors, $key: ab-uno);
                         }
                         &:active path{
                             transform:scale(1.07);
                         }
                         & path{
-                            color: map-get($map: $paleta, $key: uno);
+                            color: map-get($map: $colors, $key: ab-nueve);
                         }
                     }
                 }
@@ -85,12 +85,12 @@
         &--button-carrito{
             @extend .main-productos__section--button-mas;
             @include marpad(10px, 5px);
-            color: map-get($map: $paleta, $key: cinco);
-            background-color: map-get($map: $paleta, $key: diez);
+            color: map-get($map: $colors, $key: b-dos);
+            background-color: map-get($map: $colors, $key: ab-cinco);
             border: 2px solid rgba(255, 251, 252);
             border-radius: 15px 15px 15px 15px;
             &:hover{
-                background-color: map-get($map: $paleta, $key: diecisiete);
+                background-color: map-get($map: $colors, $key: ab-siete);
             }
             &:active{
                 text-decoration: underline;
