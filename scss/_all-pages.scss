@@ -4,7 +4,7 @@
     @include justali(center, center);
     @include display(flex);
     @include flex(row);
-    background-color: map-get($map: $paleta, $key: "uno");
+    background-color: map-get($map: $colors, $key: g-doce );
     box-shadow: -1px 5px 11px -3px rgba(0,0,0,0.67);
     @include position(sticky, 0, 0);
     overflow: hidden;
@@ -40,17 +40,17 @@
                 @include widhei (9vw, auto);
                 @include marpad(0 10px 0 0, 0);
                 transform: scaleX(-1);
-                background-color: map-get($map: $paleta, $key: no);
+                background-color: map-get($map: $colors, $key: no);
                 &:hover{
                     transform: scale(1.1) scaleX(-1);
                 }
                 & path{
-                    color: map-get($map: $paleta, $key: ocho);
+                    color: map-get($map: $colors, $key: b-ocho);
                 }
             }
             &--list{
                 @include widhei(11vw, auto);
-                color: map-get($map: $paleta, $key: ocho);
+                color: map-get($map: $colors, $key: b-ocho);
             }
         }
     }
@@ -62,7 +62,7 @@
     @include justali (center, center);
     @include display(flex);
     text-align: center;
-    background-color: map-get($map: $paleta, $key: uno);
+    background-color: map-get($map: $colors, $key: g-doce);
     overflow: hidden;
     &__ul{
         @include marpad (0, 7px 15px);
@@ -75,26 +75,29 @@
             @include widhei(100%, auto);
             @include marpad(4px, 0);
             @include list(none, none);
-            background-color: map-get($map: $paleta, $key: cuatro);
+            background-color: map-get($map: $colors, $key: b-ocho);
             border-radius: 10px;
             cursor: pointer;
             &:hover{
-                background-color: map-get($map: $paleta, $key: dos);
+                background-color: map-get($map: $colors, $key: ab-dos);
                 transform:scale(1.03);
                 & h4{
-                    @include texts(4vw, 800, rgba(255, 251, 252));
+                    @include texts(4vw, 800, rgb(170, 170, 170));
+                }
+                & path{
+                    color: map-get($map: $colors, $key: b-ocho );
                 }
             }
             &--svg{
                 @include widhei(13vw, auto);
                 transform: scaleX(-1);
                 & path{
-                    color: map-get($map: $paleta, $key: cinco );
+                    color: map-get($map: $colors, $key: ab-dos );
                 }
             }
             &--subpages{
                 @include justali(center, center);
-                @include texts(4vw, 600, rgba(145, 136, 104));
+                @include texts(4vw, 600, rgb(30, 90, 90));
                 @include marpad(20px, 0);
                 @include display(no);
             }
@@ -103,7 +106,7 @@
     &__log{
         @include marpad(4px, 0);
         @include display(flex);
-        color: map-get($map: $paleta, $key: no);
+        color: map-get($map: $colors, $key: no);
         overflow: hidden;
         &--login{
             text-decoration: none;
@@ -111,15 +114,18 @@
                 @include marpad(0, 2px);
                 @include justali(center, center);
                 @include display(flex);
-                background-color: map-get($map: $paleta, $key: no);
-                border: 2px solid rgba(145, 136, 104);
+                background-color: map-get($map: $colors, $key: no);
+                border: 2px solid rgb(170, 170, 170);
                 border-radius: 100px;
                 cursor: pointer;
                 &:hover{
-                    background-color: map-get($map: $paleta, $key: dos);
-                    border-color: map-get($map: $paleta, $key: cinco);
+                    background-color: map-get($map: $colors, $key: ab-dos);
+                    border-color: map-get($map: $colors, $key: b-ocho);
                     & span{
                         font-weight: 800;
+                        padding-right: 4px;
+                        color: rgb(235, 235, 235);
+                        background-size: 85% 2px;
                     }
                     & .nav__log--login--button--img1{
                         @include display(no);
@@ -131,20 +137,25 @@
                 &--img1{
                     @include widhei(14vw, auto);
                     @include marpad (0 4px 0 0, 3px 0 3px 3px);
-                    color: map-get($map: $paleta, $key: cinco);
+                    color: map-get($map: $colors, $key: b-ocho);
                     &--2{
                         @extend .nav__log--login--button--img1;
                         @include display(no);
                     }
                 }
                 &--span1{
-                    @include texts(6vw, 500, rgba(255, 251, 252));
+                    @include texts(6vw, 500, rgb(170, 170, 170));
                     padding-right: 4px;
                     @include justali(center, center);
                     text-decoration:none;
+                    background-image: linear-gradient(rgb(170, 170, 170), rgb(170, 170, 170));
+                    background-position: 50% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
                 }
-                &:active span{
-                    text-decoration: underline;
+                &:active{
+                    background-color: map-get($map: $colors, $key: g-cinco)
                 }
             }
         }
@@ -158,12 +169,12 @@
                 @include marpad (0, 7px);
                 text-decoration:none;
                 &:hover a{
-                    @include texts(6.5vw, 800, rgba(55, 106, 109));
+                    @include texts(6.5vw, 800, rgb(30, 90, 90));
                     text-decoration: none;
                     transform: scale(1.04);
                 }
                 & a{
-                    @include texts(6vw, 700, rgba(255, 251, 252));
+                    @include texts(6vw, 700, rgb(170, 170, 170));
                     @include display(in);
                     text-decoration: none;
                 }
@@ -185,7 +196,7 @@
  }
 
  #footer-nav{
-    background-color: map-get($map: $paleta, $key: nueve);
+    background-color: map-get($map: $colors, $key: g-ocho);
  }
  
 .footer{
@@ -194,12 +205,12 @@
     @include pad(20px 0 10px 0);
     @include display(flex);
     @include flex(wrap);
-    background-color: map-get($map: $paleta, $key: nueve);
+    background-color: map-get($map: $colors, $key: g-ocho);
     overflow: hidden;
     &__main-text{
         @include widhei (100%, auto);
         @include pad(10px);
-        color: map-get($map: $paleta, $key: cinco);
+        color: map-get($map: $colors, $key: b-dos);
         & h3{
             @include texts(11vw, 700, rgba(255, 251, 252));
             @include pad(10px)
@@ -231,7 +242,7 @@
                     & svg{
                         @include widhei(11vw, auto);
                         @include mar(0 20px 0 0);
-                        color: map-get($map: $paleta, $key: cinco)
+                        color: map-get($map: $colors, $key: b-dos)
                     }
                     & h5{
                         @include texts(4.5vw, 400, rgba(255, 251, 252));
@@ -268,7 +279,7 @@
         textarea{
             @include hei(15vh);
             resize: none;
-            overflow: scroll;
+            overflow-y: scroll;
         }
         input[type="submit"]{
             @include widhei(100%, auto);
@@ -306,7 +317,7 @@
                 @include flex(row);
                 & a svg{
                     @include widhei(12vw, auto);
-                    color: map-get($map: $paleta, $key: dos);
+                    color: map-get($map: $colors, $key: ab-uno);
                 }
             }
         }
@@ -364,7 +375,7 @@
             &--ul{
                 &--subpages-text-only{
                     &:hover a{
-                        @include texts(5vw, 800, rgba(55, 106, 109));
+                        @include texts(5vw, 800, rgb(30, 90, 90));
                     }
                 }
             }
@@ -444,7 +455,7 @@
                 &--subpages{
                     @include display (flex);
                     @include mar(10px);
-                    color: map-get($map: $paleta, $key: cinco);
+                    color: map-get($map: $colors, $key: ab-dos);
                 }
             }
         }
@@ -452,7 +463,7 @@
             &--ul{
                 &--subpages-text-only{
                     &:hover a{
-                        @include texts(4.5vw, 800, rgba(55, 106, 109));
+                        @include texts(4.5vw, 800, rgb(30, 90, 90));
                     }
                     & a{
                         @include fs(4vw);
@@ -508,7 +519,7 @@
             @include wid(100%);
             @include justali(center, center);
             @include display (flex);
-            background-color: map-get($map: $paleta, $key: cinco);
+            background-color: map-get($map: $colors, $key: b-dos);
             &__ul{
                 @include wid(100%);
                 @include justali(space-around, center);
@@ -521,7 +532,7 @@
                     text-align: center;
                     &:hover{
                         @include pad(0);
-                        background-color: map-get($map: $paleta, $key: ocho);
+                        background-color: map-get($map: $colors, $key: b-seis);
                         & a{
                             @include fs(18px);
                         }
@@ -551,7 +562,7 @@
                 }
                 &--span1{
                     @include texts(15px, 400, rgba(255, 251, 252));
-                    @include pad(0 6px 0 0)
+                    @include pad(0 6px 0 0);
                 }
             }
         }
@@ -562,19 +573,22 @@
             &--li{
                 @include wid(auto);
                 @include marpad(0, 0);
-                background-color: map-get($map: $paleta, $key:no);
+                background-color: map-get($map: $colors, $key:no);
                 &:hover{
-                    background-color: map-get($map: $paleta, $key: no);
+                    background-color: map-get($map: $colors, $key: no);
                 }
                 &--svg{
                     @include wid(30px);
                     & path{
-                        color: map-get($map: $paleta, $key: cinco);
+                        color: map-get($map: $colors, $key: b-dos);
                     }
                 }
                 &:hover path{
-                    color: map-get($map: $paleta, $key:dos);
+                    color: map-get($map: $colors, $key: ab-dos);
                     transform:scale(1.03);
+                }
+                &:active path{
+                    color: map-get($map: $colors, $key: g-cinco);
                 }
                 & a{
                     @include justali (center, center);
@@ -604,7 +618,7 @@
 
      #footer-nav{
         @include widhei (100%, 50px);
-        background-color: map-get($map: $paleta, $key: nueve);
+        background-color: map-get($map: $colors, $key: g-ocho);
      }
 
     .footer{

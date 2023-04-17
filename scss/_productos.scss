@@ -3,7 +3,7 @@
         @include justali(center,center);
         @include display (flex);
         @include flex(col);
-        background-color: map-get($map: $paleta, $key: catorce);
+        background-color: map-get($map: $colors, $key: b-tres);
         overflow: hidden;
         &__list-functions{
             justify-content: space-between;
@@ -21,14 +21,14 @@
                 }
                 &--img{
                     @include wid(4vw);
-                    color: map-get($map: $paleta, $key: cinco);
+                    color: map-get($map: $colors, $key: b-dos);
                 }
                 &:hover{
                     & h4{
-                        color: map-get($map: $paleta, $key: dos);
+                        color: map-get($map: $colors, $key: ab-uno);
                     }
                     & svg{
-                        color: map-get($map: $paleta, $key:  dos);
+                        color: map-get($map: $colors, $key:  ab-dos);
                     }
                 }
             }
@@ -37,7 +37,7 @@
             @include mar(0 20px 20px 20px);
             @include display(flex);
             @include flex(col);
-            background-color: map-get($map: $paleta, $key: cinco);
+            background-color: map-get($map: $colors, $key: b-dos);
             border-radius: 15px;
             &--ul{
                 @include marpad(0,0);
@@ -48,13 +48,13 @@
                 &--li{
                     @include wid(auto);
                     border-bottom: 2px solid rgb(185, 185, 185);
-                    background-color: map-get($map: $paleta, $key: cinco);
+                    background-color: map-get($map: $colors, $key: b-dos);
                     &:hover{
-                        background-color: map-get($map: $paleta, $key: quince);
+                        background-color: map-get($map: $colors, $key: b-tres);
                     }
                     &:active{
                         & img{
-                            background-color: map-get($map: $paleta, $key: dieciseis);
+                            background-color: map-get($map: $colors, $key: b-tres);
                         }
                         & h2{
                             @include pad(5px 5px 0 5px);
@@ -87,7 +87,7 @@
                         &--img{
                             @include widhei(40%, auto);
                             @include pad(0 20px 0 0);
-                            background-color: map-get($map: $paleta, $key: cinco);
+                            background-color: map-get($map: $colors, $key: b-dos);
                         }
                     }
                 }
@@ -95,12 +95,12 @@
             &--button-mas{
                 @include fs(4vw);
                 @include marpad(0, 5px);
-                background-color: map-get($map: $paleta, $key: cinco);
+                background-color: map-get($map: $colors, $key: b-dos);
                 border: 0;
                 border-radius: 0 0 15px 15px;
                 &:hover{
-                    background-color: map-get($map: $paleta, $key: quince);
-                    color: map-get($map: $paleta, $key: dos);
+                    background-color: map-get($map: $colors, $key: b-dos);
+                    color: map-get($map: $colors, $key: ab-uno);
                 }
                 &:active{
                     text-decoration: underline;
@@ -203,6 +203,16 @@
         &__section{
             &--ul{
                 &--li{
+                    &:active{
+                        & h2{
+                            @include pad(5px 5px 0 5px);
+                            @include fs(2.7vw);
+                        }
+                        & h4{
+                            @include pad(5px 5px 0 5px);
+                            @include fs(1.6vw);
+                        }
+                    }
                     &--a{
                         &--div{
                             &--product-name{
