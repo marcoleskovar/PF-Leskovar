@@ -60,7 +60,7 @@
                         @include pad(5px 5px 0 5px);
                         @include fs(7.3vw);
                     }
-                    & h4{
+                    & h3{
                         @include pad(5px 5px 0 5px);
                         @include fs(4.5vw);
                     }
@@ -129,7 +129,7 @@
                     & h2{
                         @include fs(6.6vw);
                     }
-                    & h4{
+                    & h3{
                         @include fs(3.6vw);
                     }
                 }
@@ -163,7 +163,7 @@
                     & h2{
                         @include fs(6.1vw);
                     }
-                    & h4{
+                    & h3{
                         @include fs(3.1vw);
                     }
                 }
@@ -208,7 +208,7 @@
                         @include pad(5px 5px 0 5px);
                         @include fs(2.7vw);
                     }
-                    & h4{
+                    & h3{
                         @include pad(5px 5px 0 5px);
                         @include fs(1.6vw);
                     }

@@ -40,7 +40,7 @@
     overflow: hidden;
     z-index: 15000;
     &__text{
-        @include texts(5vw,600,rgba(55, 106, 109));
+        @include texts(8vw,600,rgba(55, 106, 109));
         margin: 15px 0 10px 0;
     }
     &__article-1{

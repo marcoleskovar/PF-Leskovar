@@ -135,7 +135,7 @@ html {
   background-color: rgb(30, 90, 90);
   transform: scale(1.03);
 }
-.nav__ul--li:hover h4 {
+.nav__ul--li:hover h3 {
   font-size: 4vw;
   font-weight: 800;
   color: rgb(170, 170, 170);
@@ -290,7 +290,7 @@ html {
   padding: 10px;
   color: rgb(235, 235, 235);
 }
-.footer__main-text h3 {
+.footer__main-text h2 {
   font-size: 11vw;
   font-weight: 700;
   color: rgb(255, 251, 252);
@@ -332,7 +332,7 @@ html {
   margin: 0 20px 0 0;
   color: rgb(235, 235, 235);
 }
-.footer__content--contact-items--ul--li h5 {
+.footer__content--contact-items--ul--li h4 {
   font-size: 4.5vw;
   font-weight: 400;
   color: rgb(255, 251, 252);
@@ -346,7 +346,7 @@ html {
   display: flex;
   flex-direction: column;
 }
-.footer__form h4 {
+.footer__form h3 {
   font-size: 5.5vw;
   font-weight: 700;
   color: rgb(255, 251, 252);
@@ -427,7 +427,7 @@ html {
   display: flex;
   border-top: 1px solid rgb(172, 172, 172);
 }
-.footer__desc h6 {
+.footer__desc h5 {
   font-size: 3vw;
   font-weight: 500;
   color: rgb(255, 251, 252);
@@ -553,13 +553,13 @@ html {
   .nav__text--ul--subpages-text-only a {
     font-size: 4vw;
   }
-  .footer__main-text h3 {
+  .footer__main-text h2 {
     font-size: 9.5vw;
   }
   .footer__content--contact-items--ul--li svg {
     width: 9vw;
   }
-  .footer__content--contact-items--ul--li h5 {
+  .footer__content--contact-items--ul--li h4 {
     font-size: 3.5vw;
   }
   .footer__redes--ul--li a svg {
@@ -697,7 +697,7 @@ html {
     height: 50px;
     background-color: rgb(70, 70, 70);
   }
-  .footer__main-text h3 {
+  .footer__main-text h2 {
     font-size: 70px;
   }
   .footer__content--contact-items {
@@ -707,14 +707,14 @@ html {
   .footer__content--contact-items--ul--li svg {
     width: 45px;
   }
-  .footer__content--contact-items--ul--li h5 {
+  .footer__content--contact-items--ul--li h4 {
     font-size: 20px;
   }
   .footer__form {
     justify-content: center;
     align-content: start;
   }
-  .footer__form h4 {
+  .footer__form h3 {
     font-size: 30px;
   }
   .footer__redes {
@@ -727,7 +727,7 @@ html {
   .footer__redes--ul--li a svg {
     width: 70px;
   }
-  .footer__desc h6 {
+  .footer__desc h5 {
     font-size: 12px;
   }
   .footer input[type=text], .footer input[type=email], .footer textarea {
@@ -795,7 +795,7 @@ html {
   z-index: 15000;
 }
 .section-1-index__text {
-  font-size: 5vw;
+  font-size: 8vw;
   font-weight: 600;
   color: rgb(55, 106, 109);
   margin: 15px 0 10px 0;
@@ -1009,7 +1009,7 @@ html {
   padding: 5px 5px 0 5px;
   font-size: 7.3vw;
 }
-.main-productos__section--ul--li:active h4 {
+.main-productos__section--ul--li:active h3 {
   padding: 5px 5px 0 5px;
   font-size: 4.5vw;
 }
@@ -1076,7 +1076,7 @@ html {
   .main-productos__section--ul--li:active h2 {
     font-size: 6.6vw;
   }
-  .main-productos__section--ul--li:active h4 {
+  .main-productos__section--ul--li:active h3 {
     font-size: 3.6vw;
   }
   .main-productos__section--ul--li--a--div--product-name {
@@ -1099,7 +1099,7 @@ html {
   .main-productos__section--ul--li:active h2 {
     font-size: 6.1vw;
   }
-  .main-productos__section--ul--li:active h4 {
+  .main-productos__section--ul--li:active h3 {
     font-size: 3.1vw;
   }
   .main-productos__section--ul--li--a--div--product-name {
@@ -1131,7 +1131,7 @@ html {
     padding: 5px 5px 0 5px;
     font-size: 2.7vw;
   }
-  .main-productos__section--ul--li:active h4 {
+  .main-productos__section--ul--li:active h3 {
     padding: 5px 5px 0 5px;
     font-size: 1.6vw;
   }
