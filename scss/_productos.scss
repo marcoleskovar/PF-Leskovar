@@ -38,7 +38,7 @@
             @include display(flex);
             @include flex(col);
             background-color: map-get($map: $colors, $key: b-dos);
-            border-radius: 15px;
+            border-radius: 15px;git 
             &--ul{
                 @include marpad(0,0);
                 @include display (flex);
