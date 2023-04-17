@@ -986,7 +986,7 @@ html {
   background-color: rgb(235, 235, 235);
   border-radius: 15px;
 }
-git .main-productos__section--ul, git .main-novedades__section--ul, git .main-carrito__section--ul {
+.main-productos__section--ul, .main-novedades__section--ul, .main-carrito__section--ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -994,52 +994,52 @@ git .main-productos__section--ul, git .main-novedades__section--ul, git .main-ca
   list-style: none;
   border-radius: 15px;
 }
-git .main-productos__section--ul--li {
+.main-productos__section--ul--li {
   width: auto;
   border-bottom: 2px solid rgb(185, 185, 185);
   background-color: rgb(235, 235, 235);
 }
-git .main-productos__section--ul--li:hover {
+.main-productos__section--ul--li:hover {
   background-color: rgb(225, 225, 225);
 }
-git .main-productos__section--ul--li:active img {
+.main-productos__section--ul--li:active img {
   background-color: rgb(225, 225, 225);
 }
-git .main-productos__section--ul--li:active h2 {
+.main-productos__section--ul--li:active h2 {
   padding: 5px 5px 0 5px;
   font-size: 7.3vw;
 }
-git .main-productos__section--ul--li:active h4 {
+.main-productos__section--ul--li:active h4 {
   padding: 5px 5px 0 5px;
   font-size: 4.5vw;
 }
-git .main-productos__section--ul--li--a, git .main-novedades__section--ul--li--a, git .main-carrito__section--ul--li--a {
+.main-productos__section--ul--li--a, .main-novedades__section--ul--li--a, .main-carrito__section--ul--li--a {
   width: auto;
   align-items: center;
   display: flex;
   flex-direction: row;
   text-decoration: none;
 }
-git .main-productos__section--ul--li--a--div {
+.main-productos__section--ul--li--a--div {
   height: 100%;
   padding: 20px;
   text-align: center;
 }
-git .main-productos__section--ul--li--a--div--product-name {
+.main-productos__section--ul--li--a--div--product-name {
   font-size: 7vw;
   font-weight: 300;
   color: rgb(68, 133, 136);
   margin: 0;
   padding: 5px;
 }
-git .main-productos__section--ul--li--a--product-price {
+.main-productos__section--ul--li--a--product-price {
   font-size: 4vw;
   font-weight: 800;
   color: rgb(55, 106, 109);
   margin: 0;
   padding: 5px;
 }
-git .main-productos__section--ul--li--a--img, git .main-novedades__section--ul--li--a--img {
+.main-productos__section--ul--li--a--img, .main-novedades__section--ul--li--a--img {
   width: 40%;
   height: auto;
   padding: 0 20px 0 0;

@@ -1,238 +1,238 @@
 /* ----------------PRODUCTOS=START----------------- */
-   .main-productos{
-        @include justali(center,center);
-        @include display (flex);
-        @include flex(col);
-        background-color: map-get($map: $colors, $key: b-tres);
-        overflow: hidden;
-        &__list-functions{
-            justify-content: space-between;
-            @include display(flex);
+.main-productos{
+    @include justali(center,center);
+    @include display (flex);
+    @include flex(col);
+    background-color: map-get($map: $colors, $key: b-tres);
+    overflow: hidden;
+    &__list-functions{
+        justify-content: space-between;
+        @include display(flex);
+        @include flex(row);
+        &--div{
+            @include justali (center, center);
+            @include mar(0 30px 5px 0);
+            @include display (flex);
             @include flex(row);
-            &--div{
-                @include justali (center, center);
-                @include mar(0 30px 5px 0);
-                @include display (flex);
-                @include flex(row);
-                cursor: pointer;
-                &--text{
-                    @include marpad(0, 0 5px 0 0);
-                    @include texts(4vw, 600, rgba(255, 251, 252));
-                }
-                &--img{
-                    @include wid(4vw);
-                    color: map-get($map: $colors, $key: b-dos);
-                }
-                &:hover{
-                    & h4{
-                        color: map-get($map: $colors, $key: ab-uno);
-                    }
-                    & svg{
-                        color: map-get($map: $colors, $key:  ab-dos);
-                    }
-                }
+            cursor: pointer;
+            &--text{
+                @include marpad(0, 0 5px 0 0);
+                @include texts(4vw, 600, rgba(255, 251, 252));
             }
-        }
-        &__section{
-            @include mar(0 20px 20px 20px);
-            @include display(flex);
-            @include flex(col);
-            background-color: map-get($map: $colors, $key: b-dos);
-            border-radius: 15px;git 
-            &--ul{
-                @include marpad(0,0);
-                @include display (flex);
-                @include flex (col);
-                list-style: none;
-                border-radius: 15px;
-                &--li{
-                    @include wid(auto);
-                    border-bottom: 2px solid rgb(185, 185, 185);
-                    background-color: map-get($map: $colors, $key: b-dos);
-                    &:hover{
-                        background-color: map-get($map: $colors, $key: b-tres);
-                    }
-                    &:active{
-                        & img{
-                            background-color: map-get($map: $colors, $key: b-tres);
-                        }
-                        & h2{
-                            @include pad(5px 5px 0 5px);
-                            @include fs(7.3vw);
-                        }
-                        & h4{
-                            @include pad(5px 5px 0 5px);
-                            @include fs(4.5vw);
-                        }
-                    }
-                    &--a{
-                        @include wid(auto);
-                        align-items: center;
-                        @include display(flex);
-                        @include flex(row);
-                        text-decoration: none;
-                        &--div{
-                            @include hei(100%);
-                            @include pad(20px);
-                            text-align:center;
-                            &--product-name{
-                                @include texts(7vw, 300, rgba(68, 133, 136));
-                                @include marpad(0, 5px);
-                            }
-                        }
-                        &--product-price{
-                            @include texts(4vw, 800, rgba(55, 106, 109));
-                            @include marpad(0, 5px);
-                        }
-                        &--img{
-                            @include widhei(40%, auto);
-                            @include pad(0 20px 0 0);
-                            background-color: map-get($map: $colors, $key: b-dos);
-                        }
-                    }
-                }
+            &--img{
+                @include wid(4vw);
+                color: map-get($map: $colors, $key: b-dos);
             }
-            &--button-mas{
-                @include fs(4vw);
-                @include marpad(0, 5px);
-                background-color: map-get($map: $colors, $key: b-dos);
-                border: 0;
-                border-radius: 0 0 15px 15px;
-                &:hover{
-                    background-color: map-get($map: $colors, $key: b-dos);
+            &:hover{
+                & h4{
                     color: map-get($map: $colors, $key: ab-uno);
                 }
-                &:active{
-                    text-decoration: underline;
+                & svg{
+                    color: map-get($map: $colors, $key:  ab-dos);
                 }
             }
         }
-        .first-product-li{
-            border-radius: 15px 15px 0 0;
-            & img{
-                border-radius: 15px 0 0 0;
+    }
+    &__section{
+        @include mar(0 20px 20px 20px);
+        @include display(flex);
+        @include flex(col);
+        background-color: map-get($map: $colors, $key: b-dos);
+        border-radius: 15px;
+        &--ul{
+            @include marpad(0,0);
+            @include display (flex);
+            @include flex (col);
+            list-style: none;
+            border-radius: 15px;
+            &--li{
+                @include wid(auto);
+                border-bottom: 2px solid rgb(185, 185, 185);
+                background-color: map-get($map: $colors, $key: b-dos);
+                &:hover{
+                    background-color: map-get($map: $colors, $key: b-tres);
+                }
+                &:active{
+                    & img{
+                        background-color: map-get($map: $colors, $key: b-tres);
+                    }
+                    & h2{
+                        @include pad(5px 5px 0 5px);
+                        @include fs(7.3vw);
+                    }
+                    & h4{
+                        @include pad(5px 5px 0 5px);
+                        @include fs(4.5vw);
+                    }
+                }
+                &--a{
+                    @include wid(auto);
+                    align-items: center;
+                    @include display(flex);
+                    @include flex(row);
+                    text-decoration: none;
+                    &--div{
+                        @include hei(100%);
+                        @include pad(20px);
+                        text-align:center;
+                        &--product-name{
+                            @include texts(7vw, 300, rgba(68, 133, 136));
+                            @include marpad(0, 5px);
+                        }
+                    }
+                    &--product-price{
+                        @include texts(4vw, 800, rgba(55, 106, 109));
+                        @include marpad(0, 5px);
+                    }
+                    &--img{
+                        @include widhei(40%, auto);
+                        @include pad(0 20px 0 0);
+                        background-color: map-get($map: $colors, $key: b-dos);
+                    }
+                }
             }
         }
-        .filt{
-            justify-content: end;
-            @include mar(0 0 0 0);
+        &--button-mas{
+            @include fs(4vw);
+            @include marpad(0, 5px);
+            background-color: map-get($map: $colors, $key: b-dos);
+            border: 0;
+            border-radius: 0 0 15px 15px;
+            &:hover{
+                background-color: map-get($map: $colors, $key: b-dos);
+                color: map-get($map: $colors, $key: ab-uno);
+            }
+            &:active{
+                text-decoration: underline;
+            }
         }
     }
+    .first-product-li{
+        border-radius: 15px 15px 0 0;
+        & img{
+            border-radius: 15px 0 0 0;
+        }
+    }
+    .filt{
+        justify-content: end;
+        @include mar(0 0 0 0);
+    }
+}
 
 /* ---------BREAKPOINT-MOBILE-PRO = START--------- */
 @media (min-width:576px){
-    .main-productos{
-        &__section{
-            &--ul{
-                &--li{
-                    &:active{
-                        & h2{
-                            @include fs(6.6vw);
-                        }
-                        & h4{
-                            @include fs(3.6vw);
+.main-productos{
+    &__section{
+        &--ul{
+            &--li{
+                &:active{
+                    & h2{
+                        @include fs(6.6vw);
+                    }
+                    & h4{
+                        @include fs(3.6vw);
+                    }
+                }
+                &--a{
+                    &--div{
+                        &--product-name{
+                            @include texts(6.5vw, 300, rgba(68, 133, 136));
                         }
                     }
-                    &--a{
-                        &--div{
-                            &--product-name{
-                                @include texts(6.5vw, 300, rgba(68, 133, 136));
-                            }
-                        }
-                        &--product-price{
-                            @include texts(3.5vw, 800, rgba(55, 106, 109));
-                        }
-                        &--img{
-                            @include wid(40%);
-                        }
+                    &--product-price{
+                        @include texts(3.5vw, 800, rgba(55, 106, 109));
+                    }
+                    &--img{
+                        @include wid(40%);
                     }
                 }
             }
         }
     }
+}
 }
 /* ---------BREAKPOINT-MOBILE-PRO = END--------- */
 
 /* ---------BREAKPOINT-TABLET-PRO = START--------- */
 @media (min-width:768px){
-    .main-productos{
-        &__section{
-            &--ul{
-                &--li{
-                    &:active{
-                        & h2{
-                            @include fs(6.1vw);
-                        }
-                        & h4{
-                            @include fs(3.1vw);
+.main-productos{
+    &__section{
+        &--ul{
+            &--li{
+                &:active{
+                    & h2{
+                        @include fs(6.1vw);
+                    }
+                    & h4{
+                        @include fs(3.1vw);
+                    }
+                }
+                &--a{
+                    &--div{
+                        &--product-name{
+                            @include texts(6vw, 300, rgba(68, 133, 136));
                         }
                     }
-                    &--a{
-                        &--div{
-                            &--product-name{
-                                @include texts(6vw, 300, rgba(68, 133, 136));
-                            }
-                        }
-                        &--product-price{
-                            @include texts(3vw, 800, rgba(55, 106, 109));
-                        }
-                        &--img{
-                            @include wid(35%);
-                        }
+                    &--product-price{
+                        @include texts(3vw, 800, rgba(55, 106, 109));
+                    }
+                    &--img{
+                        @include wid(35%);
                     }
                 }
             }
         }
     }
 }
+}
 /* ---------BREAKPOINT-TABLET-PRO = END--------- */
 
 /* ---------BREAKPOINT-DESKTOP-PRO = START--------- */
 @media (min-width:992px){
-    .main-productos{
-        &__list-functions{
-            &--div{
-                &--text{
-                    @include texts(1.4vw, 600, rgba(255, 251, 252));
-                }
-                &--img{
-                    @include wid(1.4vw);
-                }
+.main-productos{
+    &__list-functions{
+        &--div{
+            &--text{
+                @include texts(1.4vw, 600, rgba(255, 251, 252));
             }
-        }
-        &__section{
-            &--ul{
-                &--li{
-                    &:active{
-                        & h2{
-                            @include pad(5px 5px 0 5px);
-                            @include fs(2.7vw);
-                        }
-                        & h4{
-                            @include pad(5px 5px 0 5px);
-                            @include fs(1.6vw);
-                        }
-                    }
-                    &--a{
-                        &--div{
-                            &--product-name{
-                                @include texts(2.5vw, 300, rgba(68, 133, 136));
-                            }
-                        }
-                        &--product-price{
-                            @include texts(1.5vw, 800, rgba(55, 106, 109));
-                        }
-                        &--img{
-                            @include wid(15%);
-                        }
-                    }
-                }
-            }
-            &--button-mas{
-                @include fs(1.5vw);
+            &--img{
+                @include wid(1.4vw);
             }
         }
     }
+    &__section{
+        &--ul{
+            &--li{
+                &:active{
+                    & h2{
+                        @include pad(5px 5px 0 5px);
+                        @include fs(2.7vw);
+                    }
+                    & h4{
+                        @include pad(5px 5px 0 5px);
+                        @include fs(1.6vw);
+                    }
+                }
+                &--a{
+                    &--div{
+                        &--product-name{
+                            @include texts(2.5vw, 300, rgba(68, 133, 136));
+                        }
+                    }
+                    &--product-price{
+                        @include texts(1.5vw, 800, rgba(55, 106, 109));
+                    }
+                    &--img{
+                        @include wid(15%);
+                    }
+                }
+            }
+        }
+        &--button-mas{
+            @include fs(1.5vw);
+        }
+    }
+}
 }
 /* ---------BREAKPOINT-DESKTOP-PRO = END--------- */
 /* ----------------PRODUCTOS=END----------------- */
