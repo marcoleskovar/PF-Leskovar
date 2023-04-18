@@ -9,9 +9,9 @@
     z-index: -1000;
     &__bg{
         @include widhei(100%, 100%);
-        background-image: url(../imagenes/deposito.jpg);
+        background-image: url(../imagenes/deposito-gamma.webp);
         background-position: center center;
-        background-size:auto;
+        background-size:cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         filter: brightness(0.8) blur(3px);
@@ -51,7 +51,7 @@
         flex-wrap: wrap;
         z-index: 500;
         &--figure{
-            @include widhei(80%, auto);
+            @include widhei(70%, auto);
             @include justali(center, center);
             align-content: center;
             @include marpad(10px, 0);
@@ -106,8 +106,10 @@
         &__tex{
             @include fs(9.5vw);
         }
-        &__article-1--figure--figcap{
-            @include fs(5.5vw);
+        &__article-1--figure{
+            &--figcap{
+                @include fs(5.5vw);
+            }
         }
         & div a{
             @include fs (5.5vw);
@@ -125,8 +127,10 @@
         &__text{
             @include fs(8vw);
         }
-        &__article-1--figure--figcap{
-            @include fs(4.5vw);
+        &__article-1--figure{
+            &--figcap{
+                @include fs(4.5vw);
+            }
         }
     }
 }
@@ -147,23 +151,27 @@
         &__text{
             @include texts(5vw, 600, rgba(55, 106, 109));
         }
-        &__article-1--figure{
-            @include wid(30%);
-            justify-content: center;
-            &:hover{
-                box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
-                & figcaption{
-                    background-size: 100% 2px;
+        &__article-1{
+            @include wid(100%);
+            &--figure{
+
+                @include wid(25%);
+                justify-content: center;
+                &:hover{
+                    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
+                    & figcaption{
+                        background-size: 100% 2px;
+                    }
                 }
-            }
-            &:active{
-                transform: scale(1.02);
-            }
-            &--img{
-                @include wid(70%);
-            }
-            &--figcap{
-                @include fs(25px);
+                &:active{
+                    transform: scale(1.02);
+                }
+                &--img{
+                    @include wid(70%);
+                }
+                &--figcap{
+                    @include fs(25px);
+                }
             }
         }
         & div a{

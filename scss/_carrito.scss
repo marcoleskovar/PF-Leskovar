@@ -35,12 +35,12 @@
                 border-bottom: 2px solid rgb(185, 185, 185);
                 background-color: map-get($map: $colors, $key: b-dos);
                 &:hover{
-                    background-color: map-get($map: $colors, $key: b-dos);
+                    background-color: map-get($map: $colors, $key: b-tres);
                 }
                 &--a{
                     @extend .main-novedades__section--ul--li--a;
                     &:hover{
-                        background-color: map-get($map: $colors, $key: b-dos);
+                        background-color: map-get($map: $colors, $key: b-tres);
                         border-radius: 15px 15px 15px 15px;
                     }
                     &:active{
@@ -59,7 +59,7 @@
                         text-align: start
                     }
                     &--img{
-                        @include widhei(30%,auto);
+                        @include wid(30vw);
                         @include pad(0 10px 0 0);
                         background-color: map-get($map: $colors, $key: b-dos);
                     }
@@ -139,7 +139,7 @@
                             @include texts(4vw, 500, rgba(55, 106, 109));
                         }
                         &--img{
-                            @include widhei(28%,auto);
+                            @include wid(25vw);
                         }
                     }
                     &--delete{
@@ -183,7 +183,7 @@
                             @include texts(3.5vw, 500, rgba(55, 106, 109));
                         }
                         &--img{
-                            @include widhei(22%,auto);
+                            @include wid(20vw);
                         }
                     }
                     &--delete{
@@ -227,7 +227,7 @@
                             @include texts(2.7vw, 500, rgba(55, 106, 109));
                         }
                         &--img{
-                            @include widhei(15%,auto);
+                            @include wid(12vw);
                         }
                     }
                     &--delete{

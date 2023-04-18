@@ -47,7 +47,6 @@
                     }
                     &:active{
                         & img{
-                            @include hei(auto);
                             background-color: map-get($map: $colors, $key: b-tres);
                         }
                         & h2{
@@ -148,7 +147,7 @@
                             }
                         }
                         &--img{
-                            @include widhei(35%,auto);
+                            @include wid(30vw);
                         }
                     }
                     &--x{
@@ -187,7 +186,7 @@
                             }
                         }
                         &--img{
-                            @include widhei(30%,auto);
+                            @include wid(20vw);
                         }
                     }
                     &--x{
@@ -236,7 +235,7 @@
                             }
                         }
                         &--img{
-                            @include widhei(15%,auto);
+                            @include wid(12vw);
                         }
                     }
                     &--x{

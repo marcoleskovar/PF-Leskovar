@@ -59,6 +59,17 @@
     .page-main-text{
         font-size: 11vw;
     }
+    .main-nosotros{
+        &__section--article{
+            &--image{
+                @include wid(85%);
+            }
+            &--text{
+                @include fs(4vw);
+            }
+
+        }
+    }
 }
 /* ---------BREAKPOINT-MOBILE-NOS = END--------- */
 
@@ -68,8 +79,14 @@
         @include fs(10vw);
     }
     .main-nosotros{
-        &__section--article--image{
-            @include wid(85%);
+        &__section--article{
+            &--image{
+                @include wid(85%);
+            }
+            &--text{
+                @include fs(3vw);
+            }
+
         }
         &__founders{
             @include wid(100%);
@@ -127,7 +144,7 @@
             &text{
                 @include wid(50%);
                 @include marpad(0, 5px);
-                @include texts(2vw, 500, rgb(0,0,0));
+                @include texts(1.5vw, 500, rgb(0,0,0));
             }
         }
         &__founders--div--{

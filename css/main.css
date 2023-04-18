@@ -754,9 +754,9 @@ html {
 .main-index__bg {
   width: 100%;
   height: 100%;
-  background-image: url(../imagenes/deposito.jpg);
+  background-image: url(../imagenes/deposito-gamma.webp);
   background-position: center center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   filter: brightness(0.8) blur(3px);
@@ -811,7 +811,7 @@ html {
   z-index: 500;
 }
 .section-1-index__article-1--figure {
-  width: 80%;
+  width: 70%;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -912,8 +912,11 @@ html {
     font-weight: 600;
     color: rgb(55, 106, 109);
   }
+  .section-1-index__article-1 {
+    width: 100%;
+  }
   .section-1-index__article-1--figure {
-    width: 30%;
+    width: 25%;
     justify-content: center;
   }
   .section-1-index__article-1--figure:hover {
@@ -993,6 +996,7 @@ html {
   flex-direction: column;
   list-style: none;
   border-radius: 15px;
+  cursor: pointer;
 }
 .main-productos__section--ul--li {
   width: auto;
@@ -1023,7 +1027,7 @@ html {
 .main-productos__section--ul--li--a--div {
   height: 100%;
   padding: 20px;
-  text-align: center;
+  text-align: start;
 }
 .main-productos__section--ul--li--a--div--product-name {
   font-size: 7vw;
@@ -1040,7 +1044,7 @@ html {
   padding: 5px;
 }
 .main-productos__section--ul--li--a--img, .main-novedades__section--ul--li--a--img {
-  width: 40%;
+  width: 25vw;
   height: auto;
   padding: 0 20px 0 0;
   background-color: rgb(235, 235, 235);
@@ -1090,7 +1094,7 @@ html {
     color: rgb(55, 106, 109);
   }
   .main-productos__section--ul--li--a--img, .main-novedades__section--ul--li--a--img {
-    width: 40%;
+    width: 25vw;
   }
 }
 /* ---------BREAKPOINT-MOBILE-PRO = END--------- */
@@ -1113,7 +1117,7 @@ html {
     color: rgb(55, 106, 109);
   }
   .main-productos__section--ul--li--a--img, .main-novedades__section--ul--li--a--img {
-    width: 35%;
+    width: 20vw;
   }
 }
 /* ---------BREAKPOINT-TABLET-PRO = END--------- */
@@ -1146,7 +1150,7 @@ html {
     color: rgb(55, 106, 109);
   }
   .main-productos__section--ul--li--a--img, .main-novedades__section--ul--li--a--img {
-    width: 15%;
+    width: 12vw;
   }
   .main-productos__section--button-mas, .main-carrito__section--button-carrito {
     font-size: 1.5vw;
@@ -1180,7 +1184,6 @@ html {
   border-radius: 15px 15px 15px 15px;
 }
 .main-novedades__section--ul--li--a:active img, .main-carrito__section--ul--li--a:active img {
-  height: auto;
   background-color: rgb(225, 225, 225);
 }
 .main-novedades__section--ul--li--a:active h2, .main-carrito__section--ul--li--a:active h2 {
@@ -1273,8 +1276,7 @@ html {
     color: rgb(68, 133, 136);
   }
   .main-novedades__section--ul--li--a--img {
-    width: 35%;
-    height: auto;
+    width: 30vw;
   }
   .main-novedades__section--ul--li--x svg, .main-carrito__section--ul--li--delete svg {
     width: 9vw;
@@ -1300,8 +1302,7 @@ html {
     color: rgb(68, 133, 136);
   }
   .main-novedades__section--ul--li--a--img {
-    width: 30%;
-    height: auto;
+    width: 20vw;
   }
   .main-novedades__section--ul--li--x svg, .main-carrito__section--ul--li--delete svg {
     width: 8vw;
@@ -1335,8 +1336,7 @@ html {
     color: rgb(68, 133, 136);
   }
   .main-novedades__section--ul--li--a--img {
-    width: 15%;
-    height: auto;
+    width: 12vw;
   }
   .main-novedades__section--ul--li--x svg, .main-carrito__section--ul--li--delete svg {
     width: 5vw;
@@ -1367,10 +1367,10 @@ html {
   background-color: rgb(235, 235, 235);
 }
 .main-carrito__section--ul--li:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(225, 225, 225);
 }
 .main-carrito__section--ul--li--a:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(225, 225, 225);
   border-radius: 15px 15px 15px 15px;
 }
 .main-carrito__section--ul--li--a:active img {
@@ -1390,8 +1390,7 @@ html {
   text-align: start;
 }
 .main-carrito__section--ul--li--a--img {
-  width: 30%;
-  height: auto;
+  width: 30vw;
   padding: 0 10px 0 0;
   background-color: rgb(235, 235, 235);
 }
@@ -1455,8 +1454,7 @@ html {
     color: rgb(55, 106, 109);
   }
   .main-carrito__section--ul--li--a--img {
-    width: 28%;
-    height: auto;
+    width: 25vw;
   }
   .main-carrito__section--ul--li--delete svg {
     width: 5vw;
@@ -1485,8 +1483,7 @@ html {
     color: rgb(55, 106, 109);
   }
   .main-carrito__section--ul--li--a--img {
-    width: 22%;
-    height: auto;
+    width: 20vw;
   }
   .main-carrito__section--ul--li--delete svg {
     width: 4vw;
@@ -1515,8 +1512,7 @@ html {
     color: rgb(55, 106, 109);
   }
   .main-carrito__section--ul--li--a--img {
-    width: 15%;
-    height: auto;
+    width: 12vw;
   }
   .main-carrito__section--ul--li--delete svg {
     width: 3vw;
@@ -1609,6 +1605,12 @@ html {
   .page-main-text {
     font-size: 11vw;
   }
+  .main-nosotros__section--article--image {
+    width: 85%;
+  }
+  .main-nosotros__section--article--text {
+    font-size: 4vw;
+  }
 }
 /* ---------BREAKPOINT-MOBILE-NOS = END--------- */
 /* ---------BREAKPOINT-TABLET-NOS = START--------- */
@@ -1618,6 +1620,9 @@ html {
   }
   .main-nosotros__section--article--image {
     width: 85%;
+  }
+  .main-nosotros__section--article--text {
+    font-size: 3vw;
   }
   .main-nosotros__founders {
     width: 100%;
@@ -1671,7 +1676,7 @@ html {
     width: 50%;
     margin: 0;
     padding: 5px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 500;
     color: rgb(0, 0, 0);
   }

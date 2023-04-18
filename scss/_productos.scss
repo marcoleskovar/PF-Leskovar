@@ -45,10 +45,12 @@
             @include flex (col);
             list-style: none;
             border-radius: 15px;
+            cursor: pointer;
             &--li{
                 @include wid(auto);
                 border-bottom: 2px solid rgb(185, 185, 185);
                 background-color: map-get($map: $colors, $key: b-dos);
+
                 &:hover{
                     background-color: map-get($map: $colors, $key: b-tres);
                 }
@@ -74,7 +76,7 @@
                     &--div{
                         @include hei(100%);
                         @include pad(20px);
-                        text-align:center;
+                        text-align:start;
                         &--product-name{
                             @include texts(7vw, 300, rgba(68, 133, 136));
                             @include marpad(0, 5px);
@@ -85,7 +87,7 @@
                         @include marpad(0, 5px);
                     }
                     &--img{
-                        @include widhei(40%, auto);
+                        @include widhei(25vw,auto);
                         @include pad(0 20px 0 0);
                         background-color: map-get($map: $colors, $key: b-dos);
                     }
@@ -143,7 +145,7 @@
                         @include texts(3.5vw, 800, rgba(55, 106, 109));
                     }
                     &--img{
-                        @include wid(40%);
+                        @include wid(25vw);
                     }
                 }
             }
@@ -177,7 +179,7 @@
                         @include texts(3vw, 800, rgba(55, 106, 109));
                     }
                     &--img{
-                        @include wid(35%);
+                        @include wid(20vw);
                     }
                 }
             }
@@ -223,7 +225,7 @@
                         @include texts(1.5vw, 800, rgba(55, 106, 109));
                     }
                     &--img{
-                        @include wid(15%);
+                        @include wid(12vw);
                     }
                 }
             }
