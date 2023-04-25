@@ -46,6 +46,9 @@
             list-style: none;
             border-radius: 15px;
             cursor: pointer;
+            .li-2{
+                animation-delay: 200ms;
+            }
             &--li{
                 @include wid(auto);
                 border-bottom: 2px solid rgb(185, 185, 185);

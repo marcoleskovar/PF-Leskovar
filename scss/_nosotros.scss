@@ -8,6 +8,9 @@
     &__section{
         @include display(flex);
         @include flex(col);
+        .li-2{
+            animation-delay: 0.7s; 
+        }
         &--article{
             @include widhei(100%, auto);
             @include justali(center, center);
@@ -35,6 +38,12 @@
         @include marpad(0, 10px);
         @include display(flex);
         @include   flex(col);
+        .li-4{
+            animation-delay: 0.3s;
+        }
+        .li-5{
+            animation-delay: 0.5s;
+        }
         &--div{
             @include widhei(100%, auto);
             @include justali(center, center);

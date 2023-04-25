@@ -27,6 +27,7 @@
         @include mar(0 20px 0px 20px);
         &--ul{
             @extend .main-novedades__section--ul;
+            
             &--li{
                 @include wid(auto);
                 justify-content: space-between;

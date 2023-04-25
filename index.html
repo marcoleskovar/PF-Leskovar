@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
-    <link rel="stylesheet" href="css/animate.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta name="description" content="Distribuidora mayorista con más de 20 años de experiencia donde encontrarás los mejores precios de productos para construcción, tornillos autoperforantes y bulones">
@@ -13,6 +12,7 @@
     <meta name="keywords" content="tornillos, bulones, autoperforantes, construcción"/>
     <meta name="copyright" content="Gamma Distribuciones"/>
     <meta name="robots" content="index, follow"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Inicio - Gamma Distribuciones</title>
 </head>
 <body>
@@ -138,15 +138,15 @@
         <!-- Empieza seccion de productos destacados (Esta seccion esta en la pagina principal, pero si pones ver mas ahi te redirige a la otra pagina) -->
         <h2 class="section-1-index__text">Productos Destacados</h2>
         <article class="section-1-index__article-1 col-lg-12">
-            <figure class="section-1-index__article-1--figure col-8 col-sm-7 col-md-4 col-lg-3">
+            <figure class="section-1-index__article-1--figure col-8 col-sm-7 col-md-4 col-lg-3 wow animate__animated animate__fadeInUp li-1">
                 <img class="section-1-index__article-1--figure--img" src="imagenes/t2-aguja-6x1.webp" alt="Producto destacado 1">
                 <figcaption class="section-1-index__article-1--figure--figcap">T2 Aguja 6x1</figcaption>   
             </figure>
-            <figure class="section-1-index__article-1--figure col-8 col-sm-7 col-md-4 col-lg-3">
+            <figure class="section-1-index__article-1--figure col-8 col-sm-7 col-md-4 col-lg-3 wow animate__animated animate__fadeInUp li-2">
                 <img class="section-1-index__article-1--figure--img" src="imagenes/t1-mecha-8x12.webp" alt="Producto Destacado 2">
                 <figcaption class="section-1-index__article-1--figure--figcap">T1 Mecha 8x1/2</figcaption>
             </figure>
-            <figure class="section-1-index__article-1--figure col-8 col-sm-7 col-md-4 col-lg-3">
+            <figure class="section-1-index__article-1--figure col-8 col-sm-7 col-md-4 col-lg-3 wow animate__animated animate__fadeInUp li-3">
                 <img class="section-1-index__article-1--figure--img" src="imagenes/hex-t2-14x2.webp" alt="Producto Destacado 3">
                 <figcaption class="section-1-index__article-1--figure--figcap">Hex T2 14x2</figcaption>
             </figure>
@@ -208,7 +208,7 @@
             <!-- FOOTER-form = END -->
             <!-- FOOTER-map = START -->
             <div class="footer__map col-12 col-md-10 col-lg-10">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.01671327685!2d-58.383759084858994!3d-34.60373888045956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1677312563394!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.01582133451!2d-58.48644812482326!3d-34.67955016150602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95323a06215%3A0x65dff9ce16fbdcdc!2sGamma%20Distribuciones%20Tornillos!5e0!3m2!1ses-419!2sar!4v1682456787426!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- FOOTER-map = END -->
             <!-- FOOTER-redes = START -->
@@ -256,6 +256,10 @@
 <!-- FOOTER = END -->
 <!-- SCRIPTS = START -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-<!-- SCRIPTS = END -->
+    <script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- SCRIPTS = END -->
 </body>
 </html>

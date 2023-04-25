@@ -50,6 +50,15 @@
         @include flex(row);
         flex-wrap: wrap;
         z-index: 500;
+        .li-1{
+                animation-delay: 100ms;
+            }
+        .li-2{
+            animation-delay: 300ms;
+        }
+        .li-3{
+            animation-delay: 600ms;
+        }
         &--figure{
             @include widhei(70%, auto);
             @include justali(center, center);
@@ -87,6 +96,11 @@
             text-decoration: none;
             margin-bottom: 5px;
             color: map-get($map: $colors, $key: g-cinco);
+            background-image: linear-gradient(rgba(55, 106, 109), rgba(55, 106, 109));
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
             &:hover{
                 color: map-get($map: $colors, $key: ab-dos);
             }
@@ -178,6 +192,7 @@
             @include fs(20px);
             &:hover{
                 color: map-get($map: $colors, $key: ab-dos);
+                background-size: 100% 2px;
             }
         }
     }
