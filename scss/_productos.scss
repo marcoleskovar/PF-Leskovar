@@ -71,7 +71,7 @@
                     }
                 }
                 &--a{
-                    @include wid(auto);
+                    @include wid(100%);
                     align-items: center;
                     @include display(flex);
                     @include flex(row);

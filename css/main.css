@@ -1036,7 +1036,7 @@ html {
   font-size: 4.5vw;
 }
 .main-productos__section--ul--li--a, .main-novedades__section--ul--li--a, .main-carrito__section--ul--li--a {
-  width: auto;
+  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -1732,3 +1732,4 @@ html {
 /* ---------------NOSOTROS=END----------------- */
 
 /*# sourceMappingURL=main.css.map */
+  
