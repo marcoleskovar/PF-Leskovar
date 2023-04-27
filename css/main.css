@@ -276,6 +276,83 @@ html {
   text-decoration: none;
 }
 
+.nav-2 {
+  flex-direction: column;
+  padding: 15px;
+}
+.nav-2__form {
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.nav-2__form--input {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  font-size: 10vw;
+  font-weight: 700;
+  color: rgb(235, 235, 235);
+  display: flex;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.nav-2__form--input::placeholder {
+  color: rgb(120, 120, 120);
+}
+.nav-2__form--lupa {
+  padding: 2px 0 0 0;
+  color: rgb(120, 120, 120);
+}
+.nav-2__form--lupa--svg {
+  width: 7vw;
+  height: 7vw;
+}
+.nav-2__h3 {
+  width: 100%;
+  margin: 30px;
+  padding: 0 0 0 15px;
+  font-size: 6vw;
+  font-weight: 500;
+  color: rgb(120, 120, 120);
+  text-align: start;
+}
+.nav-2__ul {
+  padding: 0px;
+  text-align: start;
+}
+.nav-2__ul--li {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+}
+.nav-2__ul--li:hover {
+  background-color: rgb(40, 40, 40);
+  transform: scale(1);
+}
+.nav-2__ul--li--a {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  text-decoration: none;
+  background-color: transparent;
+}
+.nav-2__ul--li--a--h4 {
+  font-size: 5vw;
+  font-weight: 600;
+  color: rgb(215, 215, 215);
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
 #BusquedaNav {
   display: none;
 }
