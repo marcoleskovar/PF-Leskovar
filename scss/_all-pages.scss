@@ -223,7 +223,7 @@
         &--input{
             @include wid(100%);
             @include marpad(5px, 10px);
-            @include texts (10vw, 700, rgb(235, 235, 235));
+            @include texts (45px, 700, rgb(235, 235, 235));
             @include display(flex);
             outline: none;
             border: none;
@@ -237,14 +237,14 @@
             @include pad(2px 0 0 0);
             color: map-get($map: $colors, $key: g-tres);
             &--svg{
-                @include widhei (7vw, 7vw);
+                @include widhei (35px, 35px);
             }
         }
     }
     &__h3{
         @include wid(100%);
         @include marpad(30px, 0 0 0 15px);
-        @include texts (6vw, 500, rgb(120, 120, 120));
+        @include texts (27px, 500, rgb(120, 120, 120));
         text-align: start;
     }
     &__ul{
@@ -253,7 +253,6 @@
         text-align: start;
         &--li{
             @extend .nav__ul--li;
-            
             @include marpad(0px, 0px);
             background-color: transparent;
             border: none;
@@ -268,7 +267,7 @@
                 text-decoration: none;
                 background-color: transparent;
                 &--h4{
-                    @include texts (5vw, 600, rgb(215, 215, 215));
+                    @include texts (23px, 600, rgb(215, 215, 215));
                     @include marpad(0, 0 0 0 10px);
                 }
             }
