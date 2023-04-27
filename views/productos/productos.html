@@ -30,19 +30,25 @@
             <!-- HEADER-logo = END -->
             <!-- HEADER-sup = START -->
             <div class="header__first--nav-sup col-6 m-auto">
-                <a class="nav-link hover" aria-current="page" href="../404/404.html">
-                    <svg class="header__first--nav-sup--lupa-1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <button class="header__first--nav-sup--lupa  bi bi-list navbar-toggler outline-none p-0 border-0" id="lupaButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"">
+                    <svg class="header__first--nav-sup--lupa--1" id="lupaOpen" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                     </svg>
-                </a>
-                <button class="navbar-toggler outline-none p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg class="header__first--nav-sup--list bi bi-list" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <svg class="header__first--nav-sup--lupa--2 bi bi-list bi bi-x" id="lupaClose" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                    </svg>
+                </button>
+                <button class="header__first--nav-sup--list bi bi-list navbar-toggler outline-none p-0 border-0" id="listButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="header__first--nav-sup--list--1 bi bi-list" id="listOpen" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    <svg class="header__first--nav-sup--list--2 bi bi-list bi bi-x" id="listClose" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
                     </svg>
                 </button>
             </div>
             <!-- HEADER-sup = END -->
-            <!-- NAV = START -->
+<!-- NAV = START -->
             <nav class="nav collapse navbar-collapse col-12 col-lg-4" id="navbarNav">
             <!-- NAV-items = START -->
                 <!-- NAV-login = START -->
@@ -104,7 +110,46 @@
                 <!-- NAV-subpaginas = END -->
             <!-- NAV-items = END -->
             </nav>
-            <!-- NAV = END  -->
+<!-- NAV = END  -->
+<!-- BUSCAR = START -->
+            <nav class="nav-2 collapse navbar-collapse col-12 col-lg-4" id="navbarNav1">
+                <!-- BUSCAR-buscador = START -->
+                <form class="nav-2__form m-0">
+                    <span class="nav-2__form--lupa">
+                        <svg class="nav-2__form--lupa--svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg>
+                    </span>
+                    <input class="nav-2__form--input" type="text" placeholder="Buscar" action="#">
+                </form>
+                <!-- BUSCAR-buscador = END -->
+                <!-- BUSCAR-destacados = START -->
+                <h3 class="nav-2__h3">Mas buscados</h3>
+                <ul class="nav-2__ul navbar-nav col-12 col-lg-8">
+                    <li class="nav-2__ul--li nav-item container-fluid p-0" id="ProductosItem">
+                        <a class="nav-2__ul--li--a hover" aria-current="page" href="#Productos">
+                            <h4 class="nav-2__ul--li--a--h4">T1 Aguja 8x9/16</h4>
+                        </a>
+                    </li>
+                    <li class="nav-2__ul--li nav-item container-fluid p-0" id="ProductosItem">
+                        <a class="nav-2__ul--li--a hover" aria-current="page" href="#Productos">
+                            <h4 class="nav-2__ul--li--a--h4">Fix 5x45</h4>
+                        </a>
+                    </li>
+                    <li class="nav-2__ul--li nav-item container-fluid p-0" id="ProductosItem">
+                        <a class="nav-2__ul--li--a hover" aria-current="page" href="#Productos">
+                            <h4 class="nav-2__ul--li--a--h4">T1 Mecha 8x1/2</h4>
+                        </a>
+                    </li>
+                    <li class="nav-2__ul--li nav-item container-fluid p-0" id="ProductosItem">
+                        <a class="nav-2__ul--li--a hover" aria-current="page" href="#Productos">
+                            <h4 class="nav-2__ul--li--a--h4">Hex T2 14x2</h4>
+                        </a>
+                    </li>
+                </ul>
+                <!-- BUSCAR-destacados = START -->
+            </nav>
+<!-- BUSCAR = END  -->
         </div>
         <!-- HEADER-subpaginas-desktop = START -->
         <div class="header__desktop-subpages col-lg-12">
@@ -141,7 +186,7 @@
             </div>
         </div>
         <!-- SECTION-(productos) = START -->
-        <section class="main-productos__section col-11 col-lg-10">
+        <section class="main-productos__section col-12 col-lg-10">
             <!-- SECTION-(productos)-ul = START -->
             <ul class="main-productos__section--ul">
                 <!-- PRODUCTO 1 = START -->
@@ -321,6 +366,7 @@
 <script>
 new WOW().init();
 </script>
+<script src="../../js/buscador.js"></script>
 <!-- SCRIPTS = END -->
 </body>
 </html>

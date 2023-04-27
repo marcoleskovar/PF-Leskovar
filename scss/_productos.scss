@@ -17,11 +17,11 @@
             cursor: pointer;
             &--text{
                 @include marpad(0, 0 5px 0 0);
-                @include texts(4vw, 600, rgba(255, 251, 252));
+                @include texts(4vw, 600, rgb(255, 255, 255));
             }
             &--img{
                 @include wid(4vw);
-                color: map-get($map: $colors, $key: b-dos);
+                color: map-get($map: $colors, $key: b-uno);
             }
             &:hover{
                 & h4{
@@ -34,30 +34,22 @@
         }
     }
     &__section{
-        @include mar(0 20px 20px 20px);
+        @include mar(0);
         @include display(flex);
         @include flex(col);
         background-color: map-get($map: $colors, $key: b-dos);
-        border-radius: 15px;
         &--ul{
             @include marpad(0,0);
             @include display (flex);
             @include flex (col);
             list-style: none;
-            border-radius: 15px;
             cursor: pointer;
-            .li-2{
-                animation-delay: 100ms;
-            }
-            .li-3{
-                animation-delay: 200ms;
-            }
-            .li-4{
-                animation-delay: 300ms;
+            .li-1, .li-2, .li-3, .li-4, .li-5, .li-6{
+                animation-delay: .1s;
             }
             &--li{
                 @include wid(auto);
-                border-bottom: 2px solid rgb(185, 185, 185);
+                border-bottom: 1px solid rgb(185, 185, 185);
                 background-color: map-get($map: $colors, $key: b-dos);
 
                 &:hover{
@@ -68,12 +60,10 @@
                         background-color: map-get($map: $colors, $key: b-tres);
                     }
                     & h2{
-                        @include pad(5px 5px 0 5px);
-                        @include fs(7.3vw);
+                        @include fs(4.5vw);
                     }
                     & h3{
-                        @include pad(5px 5px 0 5px);
-                        @include fs(4.5vw);
+                        @include fs(6.3vw);
                     }
                 }
                 &--a{
@@ -87,16 +77,16 @@
                         @include pad(20px);
                         text-align:start;
                         &--product-name{
-                            @include texts(7vw, 300, rgba(68, 133, 136));
+                            @include texts(4.2vw, 300, rgba(68, 133, 136));
                             @include marpad(0, 5px);
                         }
                     }
                     &--product-price{
-                        @include texts(4vw, 800, rgba(55, 106, 109));
+                        @include texts(6vw, 800, rgba(55, 106, 109));
                         @include marpad(0, 5px);
                     }
                     &--img{
-                        @include widhei(25vw,auto);
+                        @include widhei(40vw,auto);
                         @include pad(0 20px 0 0);
                         background-color: map-get($map: $colors, $key: b-dos);
                     }
@@ -106,9 +96,9 @@
         &--button-mas{
             @include fs(4vw);
             @include marpad(0, 5px);
+            color: map-get($map: $colors, $key: g-siete);
             background-color: map-get($map: $colors, $key: b-dos);
             border: 0;
-            border-radius: 0 0 15px 15px;
             &:hover{
                 background-color: map-get($map: $colors, $key: b-dos);
                 color: map-get($map: $colors, $key: ab-uno);
@@ -116,12 +106,6 @@
             &:active{
                 text-decoration: underline;
             }
-        }
-    }
-    .first-product-li{
-        border-radius: 15px 15px 0 0;
-        & img{
-            border-radius: 15px 0 0 0;
         }
     }
     .filt{
@@ -138,23 +122,23 @@
             &--li{
                 &:active{
                     & h2{
-                        @include fs(6.6vw);
+                        @include fs(4.3vw);
                     }
                     & h3{
-                        @include fs(3.6vw);
+                        @include fs(6.1vw);
                     }
                 }
                 &--a{
                     &--div{
                         &--product-name{
-                            @include texts(6.5vw, 300, rgba(68, 133, 136));
+                            @include texts(4vw, 300, rgba(68, 133, 136));
                         }
                     }
                     &--product-price{
-                        @include texts(3.5vw, 800, rgba(55, 106, 109));
+                        @include texts(5.8vw, 800, rgba(55, 106, 109));
                     }
                     &--img{
-                        @include wid(25vw);
+                        @include wid(35vw);
                     }
                 }
             }
@@ -167,37 +151,38 @@
 /* ---------BREAKPOINT-TABLET-PRO = START--------- */
 @media (min-width:768px){
 .main-productos{
+    &__list-functions{
+        &--div{
+            &--text{
+                @include texts(3vw, 600, rgb(255, 255, 255));
+            }
+            &--img{
+                @include wid(3vw);
+            }
+        }
+    }
     &__section{
         &--ul{
-            .li-2{
-                animation-delay: 100ms;
-            }
-            .li-3{
-                animation-delay: 200ms;
-            }
-            .li-4{
-                animation-delay: 0ms;
-            }
             &--li{
                 &:active{
                     & h2{
-                        @include fs(6.1vw);
+                        @include fs(4.1vw);
                     }
                     & h3{
-                        @include fs(3.1vw);
+                        @include fs(5.3vw);
                     }
                 }
                 &--a{
                     &--div{
                         &--product-name{
-                            @include texts(6vw, 300, rgba(68, 133, 136));
+                            @include texts(3.8vw, 300, rgba(68, 133, 136));
                         }
                     }
                     &--product-price{
-                        @include texts(3vw, 800, rgba(55, 106, 109));
+                        @include texts(5vw, 800, rgba(55, 106, 109));
                     }
                     &--img{
-                        @include wid(20vw);
+                        @include wid(29vw);
                     }
                 }
             }
@@ -221,7 +206,10 @@
         }
     }
     &__section{
+        @include mar((0 20px 20px 20px));
+        border-radius: 15px;
         &--ul{
+            border-radius: 15px;
             .li-2{
                 animation-delay: 100ms;
             }
@@ -234,22 +222,20 @@
             &--li{
                 &:active{
                     & h2{
-                        @include pad(5px 5px 0 5px);
-                        @include fs(2.7vw);
+                        @include fs(1.6vw);
                     }
                     & h3{
-                        @include pad(5px 5px 0 5px);
-                        @include fs(1.6vw);
+                        @include fs(2.1vw);
                     }
                 }
                 &--a{
                     &--div{
                         &--product-name{
-                            @include texts(2.5vw, 300, rgba(68, 133, 136));
+                            @include texts(1.5vw, 300, rgba(68, 133, 136));
                         }
                     }
                     &--product-price{
-                        @include texts(1.5vw, 800, rgba(55, 106, 109));
+                        @include texts(2vw, 800, rgba(55, 106, 109));
                     }
                     &--img{
                         @include wid(12vw);
@@ -259,6 +245,13 @@
         }
         &--button-mas{
             @include fs(1.5vw);
+            border-radius: 0 0 15px 15px;
+        }
+    }
+    .first-product-li{
+        border-radius: 15px 15px 0 0;
+        & img{
+            border-radius: 15px 0 0 0;
         }
     }
 }

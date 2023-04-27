@@ -628,6 +628,7 @@
                         background-color: map-get($map: $colors, $key: b-seis);
                         & a{
                             @include fs(18px);
+                            transition: all 0.2s ease-in-out;
                         }
                     }
                     & a{

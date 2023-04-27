@@ -50,7 +50,6 @@
                             background-color: map-get($map: $colors, $key: b-tres);
                         }
                         & h2{
-                            @include pad(5px 5px 0 5px);
                             @include fs(4.8vw);
                         }
                     }
