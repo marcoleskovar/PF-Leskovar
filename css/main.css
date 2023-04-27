@@ -81,7 +81,7 @@ html {
   display: flex;
   overflow: hidden;
 }
-.header__first--nav-sup--lupa-1 {
+.header__first--nav-sup--lupa--1 {
   width: 9vw;
   height: auto;
   margin: 0 10px 0 0;
@@ -89,13 +89,20 @@ html {
   transform: scaleX(-1);
   background-color: rgba(255, 255, 255, 0);
 }
-.header__first--nav-sup--lupa-1:hover {
+.header__first--nav-sup--lupa--1:hover {
   transform: scale(1.1) scaleX(-1);
 }
-.header__first--nav-sup--lupa-1 path {
+.header__first--nav-sup--lupa--1 path {
   color: rgb(170, 170, 170);
 }
-.header__first--nav-sup--list {
+.header__first--nav-sup--lupa--2, .header__first--nav-sup--list--2 {
+  display: flex;
+  width: 11vw;
+  height: auto;
+  color: rgb(170, 170, 170);
+}
+.header__first--nav-sup--list--1 {
+  display: flex;
   width: 11vw;
   height: auto;
   color: rgb(170, 170, 170);
@@ -104,7 +111,19 @@ html {
   display: none;
 }
 
-.nav {
+#lupaClose, #listClose {
+  display: none;
+}
+
+#lupaOpen:focus ~ #listButton {
+  opacity: 1;
+}
+
+#listOpen:focus ~ #lupaButton {
+  opacity: 1;
+}
+
+.nav, .nav-2 {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -112,7 +131,7 @@ html {
   background-color: rgb(30, 30, 30);
   overflow: hidden;
 }
-.nav__ul {
+.nav__ul, .nav-2__ul {
   margin: 0;
   padding: 7px 15px;
   justify-content: center;
@@ -122,7 +141,7 @@ html {
   flex-direction: column;
   overflow: hidden;
 }
-.nav__ul--li {
+.nav__ul--li, .nav-2__ul--li {
   width: 100%;
   height: auto;
   margin: 4px;
@@ -133,16 +152,16 @@ html {
   border-radius: 10px;
   cursor: pointer;
 }
-.nav__ul--li:hover {
+.nav__ul--li:hover, .nav-2__ul--li:hover {
   background-color: rgb(30, 90, 90);
   transform: scale(1.03);
 }
-.nav__ul--li:hover h3 {
+.nav__ul--li:hover h3, .nav-2__ul--li:hover h3 {
   font-size: 4vw;
   font-weight: 800;
   color: rgb(170, 170, 170);
 }
-.nav__ul--li:hover path {
+.nav__ul--li:hover path, .nav-2__ul--li:hover path {
   color: rgb(170, 170, 170);
 }
 .nav__ul--li--svg {
@@ -479,10 +498,10 @@ html {
     font-weight: 800;
     color: rgb(30, 90, 90);
   }
-  .nav__ul {
+  .nav__ul, .nav-2__ul {
     flex-direction: row;
   }
-  .nav__ul--li {
+  .nav__ul--li, .nav-2__ul--li {
     width: 100%;
     height: auto;
     padding: 20px 30px;
@@ -527,17 +546,17 @@ html {
     font-size: 4vw;
     padding: 0 6px 0 0;
   }
-  .nav__ul {
+  .nav__ul, .nav-2__ul {
     flex-direction: column;
   }
-  .nav__ul--li {
+  .nav__ul--li, .nav-2__ul--li {
     margin: 10px;
     padding: 0;
   }
   .nav__ul--li--svg {
     width: 9vw;
   }
-  .nav__ul--li a {
+  .nav__ul--li a, .nav-2__ul--li a {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -628,7 +647,7 @@ html {
     color: rgb(73, 73, 73);
     text-decoration: none;
   }
-  .nav {
+  .nav, .nav-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
@@ -648,18 +667,18 @@ html {
     color: rgb(255, 251, 252);
     padding: 0 6px 0 0;
   }
-  .nav__ul {
+  .nav__ul, .nav-2__ul {
     width: auto;
     padding: 0;
     display: flex;
   }
-  .nav__ul--li {
+  .nav__ul--li, .nav-2__ul--li {
     width: auto;
     margin: 0;
     padding: 0;
     background-color: rgba(255, 255, 255, 0);
   }
-  .nav__ul--li:hover {
+  .nav__ul--li:hover, .nav-2__ul--li:hover {
     background-color: rgba(255, 255, 255, 0);
   }
   .nav__ul--li--svg {
@@ -669,14 +688,14 @@ html {
     color: rgb(235, 235, 235);
     transition: color 0.2s ease-in-out;
   }
-  .nav__ul--li:hover path {
+  .nav__ul--li:hover path, .nav-2__ul--li:hover path {
     color: rgb(30, 90, 90);
     transform: scale(1.03);
   }
-  .nav__ul--li:active path {
+  .nav__ul--li:active path, .nav-2__ul--li:active path {
     color: rgb(100, 100, 100);
   }
-  .nav__ul--li a {
+  .nav__ul--li a, .nav-2__ul--li a {
     justify-content: center;
     align-items: center;
     text-align: center;

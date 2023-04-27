@@ -38,21 +38,34 @@
             @include justali (end, center);
             @include display (flex);
             overflow: hidden;
-            &--lupa-1{
-                @include widhei (9vw, auto);
-                @include marpad(0 10px 0 0, 0);
-                transform: scaleX(-1);
-                background-color: map-get($map: $colors, $key: no);
-                &:hover{
-                    transform: scale(1.1) scaleX(-1);
+            &--lupa{
+                &--1{
+                    @include widhei (9vw, auto);
+                    @include marpad(0 10px 0 0, 0);
+                    transform: scaleX(-1);
+                    background-color: map-get($map: $colors, $key: no);
+                    &:hover{
+                        transform: scale(1.1) scaleX(-1);
+                    }
+                    & path{
+                        color: map-get($map: $colors, $key: b-ocho);
+                    }
                 }
-                & path{
+                &--2{
+                    @include display (flex);
+                    @include widhei(11vw, auto);
                     color: map-get($map: $colors, $key: b-ocho);
                 }
             }
             &--list{
-                @include widhei(11vw, auto);
-                color: map-get($map: $colors, $key: b-ocho);
+                &--1{
+                    @include display (flex);
+                    @include widhei(11vw, auto);
+                    color: map-get($map: $colors, $key: b-ocho);
+                }
+                &--2{
+                    @extend .header__first--nav-sup--lupa--2;
+                }
             }
         }
     }
@@ -60,6 +73,17 @@
         @include display(no);
     }
 }
+#lupaClose, #listClose {
+  display: none;
+}
+#lupaOpen:focus ~ #listButton {
+  opacity: 1;
+}
+
+#listOpen:focus ~ #lupaButton {
+  opacity: 1;
+}
+
 .nav{
     @include justali (center, center);
     @include display(flex);
@@ -182,6 +206,15 @@
                     text-decoration: none;
                 }
             }
+        }
+    }
+}
+.nav-2{
+    @extend .nav;
+    &__ul{
+        @extend .nav__ul;
+        &--li{
+            @extend .nav__ul--li;
         }
     }
 }
