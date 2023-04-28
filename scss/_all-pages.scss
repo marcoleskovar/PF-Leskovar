@@ -588,9 +588,17 @@
     }
     .nav-2{
         &__ul{
-            @include flex (col);
-            align-items: start;
-            justify-content: start;
+            @include marpad (0, 0);
+            @include justali (start, center);
+            justify-items: center;
+            @include flex(col);
+            text-align: start;
+            &--li{
+                @include marpad(0, 0);
+                &--a{
+                    justify-content: start!important;
+                }
+            }
         }
     }
     .footer{
@@ -729,10 +737,12 @@
             @include display(no);
         }
     }
+    #navbarNav1{
+        @include display(no!important);
+    }
     .navbar-expand-lg .navbar-nav {
         flex-direction: row-reverse;
      }
-
      #ProductosItem{
         display: none;
      }
