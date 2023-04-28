@@ -210,9 +210,13 @@
     }
 }
 .nav-2{
-    @extend .nav;
-    @include flex (col);
+    align-items: center;
     @include pad(15px);
+    @include display(flex);
+    @include flex (col);
+    text-align: center;
+    background-color: map-get($map: $colors, $key: g-doce);
+    overflow: hidden;
     &__form{
         @include hei(auto);
         @include justali(center, center);
