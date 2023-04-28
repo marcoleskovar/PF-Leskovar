@@ -286,6 +286,7 @@ html {
   overflow: hidden;
 }
 .nav-2__form {
+  width: 100%;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -297,6 +298,7 @@ html {
 }
 .nav-2__form--input {
   width: 100%;
+  height: auto;
   margin: 5px;
   padding: 10px;
   font-size: 45px;
@@ -309,6 +311,9 @@ html {
   background-color: transparent;
 }
 .nav-2__form--input::placeholder {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgb(235, 235, 235);
   color: rgb(120, 120, 120);
 }
 .nav-2__form--lupa {
@@ -329,18 +334,24 @@ html {
   text-align: start;
 }
 .nav-2__ul {
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   text-align: start;
 }
 .nav-2__ul--li {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
   border: none;
 }
 .nav-2__ul--li:hover {
   background-color: rgb(40, 40, 40);
   transform: scale(1);
+}
+.nav-2__ul--li:hover h3 {
+  font-size: 1px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0);
 }
 .nav-2__ul--li--a {
   display: flex;
@@ -462,7 +473,7 @@ html {
   display: flex;
   flex-direction: column;
 }
-.footer input[type=text], .footer input[type=email], .footer textarea {
+.footer__form--formulario--input {
   width: 100%;
   margin: 5px;
   padding: 10px;
@@ -470,12 +481,12 @@ html {
   border: none;
   border-radius: 5px;
 }
-.footer textarea {
+.footer__form--formulario .textarea {
   height: 15vh;
   resize: none;
   overflow-y: scroll;
 }
-.footer input[type=submit] {
+.footer__form--formulario .submit {
   width: 100%;
   height: auto;
   margin: 5px;
@@ -488,7 +499,7 @@ html {
   border-radius: 5px;
   cursor: pointer;
 }
-.footer input[type=submit]:hover {
+.footer__form--formulario .submit:hover {
   background-color: rgb(42, 82, 84);
 }
 .footer__map {
@@ -595,10 +606,18 @@ html {
   .nav__text--ul--subpages-text-only a {
     font-size: 4.5vw;
   }
-  input[type=text], input input[type=email], input textarea {
+  .nav-2__ul {
+    flex-direction: column;
+  }
+  .footer__form--formulario--input {
     font-size: 5vw;
   }
-  input[type=submit] {
+  .footer__form--formulario .textarea {
+    height: 15vh;
+    resize: none;
+    overflow-y: scroll;
+  }
+  .footer__form--formulario .submit {
     font-size: 5vw;
   }
 }
@@ -657,6 +676,11 @@ html {
   .nav__text--ul--subpages-text-only a {
     font-size: 4vw;
   }
+  .nav-2__ul {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
   .footer__main-text h2 {
     font-size: 9.5vw;
   }
@@ -669,10 +693,10 @@ html {
   .footer__redes--ul--li a svg {
     width: 9vw;
   }
-  input[type=text], input input[type=email], input textarea {
+  .footer__form--formulario--input {
     font-size: 3.5vw;
   }
-  input[type=submit] {
+  .footer__form--formulario .submit {
     font-size: 4vw;
   }
 }
@@ -837,10 +861,10 @@ html {
   .footer__desc h5 {
     font-size: 12px;
   }
-  .footer input[type=text], .footer input[type=email], .footer textarea {
+  .footer__form--formulario--input {
     font-size: 19px;
   }
-  .footer input[type=submit] {
+  .footer__form--formulario .submit {
     font-size: 22px;
   }
 }

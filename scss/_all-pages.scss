@@ -218,14 +218,14 @@
     background-color: map-get($map: $colors, $key: g-doce);
     overflow: hidden;
     &__form{
-        @include hei(auto);
+        @include widhei(100%, auto);
         @include justali(center, center);
         text-align: center;
         @include marpad(20px,0px);
         @include display (flex);
         @include flex(row);
         &--input{
-            @include wid(100%);
+            @include widhei(100%,auto);
             @include marpad(5px, 10px);
             @include texts (45px, 700, rgb(235, 235, 235));
             @include display(flex);
@@ -234,6 +234,7 @@
             border-radius: 5px;
             background-color: transparent;
             &::placeholder{
+                @include texts (45px, 700, rgb(235, 235, 235));
                 color: map-get($map: $colors, $key: g-tres);
             }
         }
@@ -253,16 +254,19 @@
     }
     &__ul{
         @extend .nav__ul;
-        @include pad(0px);
+        @include marpad (0, 0);
         text-align: start;
         &--li{
             @extend .nav__ul--li;
-            @include marpad(0px, 0px);
+            @include marpad(0, 0);
             background-color: transparent;
             border: none;
             &:hover{
                 background-color: map-get($map: $colors, $key: g-once);
                 transform:scale(1);
+                & h3{
+                    @include texts(1px, 100, rgb(0,0,0,0));
+                }
             }
             &--a{
                 @include display(flex);
@@ -278,6 +282,7 @@
         }
     }
 }
+
 #BusquedaNav{
     @include display(no)
  }
@@ -363,32 +368,32 @@
             align-items: center;
             @include display(flex);
             @include flex(col);
+            &--input{
+                @include wid(100%);
+                @include marpad(5px, 10px);
+                @include fs(5vw);
+                border:none;
+                border-radius: 5px;
+            }
+            .textarea{
+                @include hei(15vh);
+                resize: none;
+                overflow-y: scroll;
+            }
+            .submit{
+                @include widhei(100%, auto);
+                @include marpad(5px, 5px 20px);
+                @include texts(5.5vw, 500, rgba(255, 251, 252));
+                background-color: rgba(55, 106, 109);
+                border: 1px solid rgba(255, 251, 252);
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(42, 82, 84);
+                }
+            }
         }
     }
-        input[type="text"], input[type="email"], textarea{
-            @include wid(100%);
-            @include marpad(5px, 10px);
-            @include fs(5vw);
-            border:none;
-            border-radius: 5px;
-        }
-        textarea{
-            @include hei(15vh);
-            resize: none;
-            overflow-y: scroll;
-        }
-        input[type="submit"]{
-            @include widhei(100%, auto);
-            @include marpad(5px, 5px 20px);
-            @include texts(5.5vw, 500, rgba(255, 251, 252));
-            background-color: rgba(55, 106, 109);
-            border: 1px solid rgba(255, 251, 252);
-            border-radius: 5px;
-            cursor: pointer;
-            &:hover{
-                background-color: rgb(42, 82, 84);
-            }
-     }
     &__map{
         @include hei(auto);
         padding: 10px;
@@ -489,14 +494,27 @@
         &text--ul--subpages-text-only a{
             @include fs(4.5vw);
         }
+        
     }
-    input{
-    &[type="text"], input[type="email"], textarea{
-        @include fs(5vw);
+    .nav-2{
+        &__ul{
+            @include flex (col);
+        }
     }
-    &[type="submit"]{
-        @include fs(5vw);
-    }
+    .footer__form{
+        &--formulario{
+            &--input{
+                @include fs(5vw);
+            }
+            .textarea{
+                @include hei(15vh);
+                resize: none;
+                overflow-y: scroll;
+            }
+            .submit{
+                @include fs(5vw);
+            }
+        }
     }
 }
 /* ---------BREAKPOINT-MOBILE-ALL = END--------- */
@@ -568,7 +586,13 @@
             }
         }
     }
-
+    .nav-2{
+        &__ul{
+            @include flex (col);
+            align-items: start;
+            justify-content: start;
+        }
+    }
     .footer{
         &__main-text h2{
             @include fs(9.5vw);
@@ -584,14 +608,16 @@
         &__redes--ul--li a svg{
             @include wid(9vw)
         }
-    }
-    input{
-        &[type="text"], input[type="email"], textarea{
-            @include fs(3.5vw);
-         }
-        &[type="submit"]{
-            @include fs(4vw);
-         }
+        &__form{
+            &--formulario{
+                &--input{
+                    @include fs(3.5vw);
+                }
+                .submit{
+                    @include fs(4vw);
+                }
+            }
+        }
     }
 }
 /* ---------BREAKPOINT-TABLET-ALL = END--------- */
@@ -755,12 +781,15 @@
         &__desc h5{
             @include fs(12px);
         }
-        input[type="text"], input[type="email"], textarea{
-            @include fs (19px);
-         }
-
-        input[type="submit"]{
-            @include fs(22px);
+        &__form{
+            &--formulario{
+                &--input{
+                    @include fs(19px);
+                }
+                .submit{
+                    @include fs(22px);
+                }
+            }
         }
     }
 }
