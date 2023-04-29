@@ -1,0 +1,15 @@
+.main-404{
+    @extend .main-index;
+    background-size: cover;
+    &__animation-404{
+        @extend .main-index__bg;
+        background-image: url(../imagenes/deposito-gamma.webp);
+    }
+    &__div{
+        @extend .main-index__text;
+        overflow: hidden;
+        &--h1{
+            @include texts(13vw, 800, rgba(255, 251, 252));
+        }
+    }
+}

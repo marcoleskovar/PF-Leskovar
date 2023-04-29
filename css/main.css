@@ -882,7 +882,7 @@ html {
 /* ---------BREAKPOINT-DESKTOP-ALL = END--------- */
 /* ----------------ALL-PAGES=END----------------- */
 /* ----------------INDEX=START----------------- */
-.main-index {
+.main-index, .main-404 {
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -893,7 +893,7 @@ html {
   overflow: hidden;
   z-index: -1000;
 }
-.main-index__bg {
+.main-index__bg, .main-404__animation-404 {
   width: 100%;
   height: 100%;
   background-image: url(../imagenes/deposito-gamma.webp);
@@ -904,7 +904,7 @@ html {
   filter: brightness(0.8) blur(3px);
   overflow: hidden;
 }
-.main-index__text {
+.main-index__text, .main-404__div {
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -917,7 +917,7 @@ html {
   top: 10%;
   left: 0;
 }
-.main-index__text h1 {
+.main-index__text h1, .main-404__div h1 {
   font-size: 13vw;
   font-weight: 800;
   color: rgb(255, 251, 252);
@@ -1016,7 +1016,7 @@ html {
 
 /* ---------BREAKPOINT-MOBILE-IND = START--------- */
 @media (min-width: 576px) {
-  .main-index__text h1 {
+  .main-index__text h1, .main-404__div h1 {
     font-size: 11vw;
   }
   .section-1-index__tex {
@@ -1032,7 +1032,7 @@ html {
 /* ---------BREAKPOINT-MOBILE-IND = END--------- */
 /* ---------BREAKPOINT-TABLET-IND = START--------- */
 @media (min-width: 768px) {
-  .main-index__text h1 {
+  .main-index__text h1, .main-404__div h1 {
     font-size: 9.5vw;
   }
   .section-1-index__text {
@@ -1054,7 +1054,7 @@ html {
 /* ---------BREAKPOINT-TABLET-IND = END--------- */
 /* ---------BREAKPOINT-DESKTOP-IND = START--------- */
 @media (min-width: 992px) {
-  .main-index__text h1 {
+  .main-index__text h1, .main-404__div h1 {
     font-size: 5.5vw;
     font-weight: 800;
     color: rgb(255, 251, 252);
@@ -1896,5 +1896,19 @@ html {
 }
 /* ---------BREAKPOINT-DESKTOP-NOS = END--------- */
 /* ---------------NOSOTROS=END----------------- */
+.main-404 {
+  background-size: cover;
+}
+.main-404__animation-404 {
+  background-image: url(../imagenes/deposito-gamma.webp);
+}
+.main-404__div {
+  overflow: hidden;
+}
+.main-404__div--h1 {
+  font-size: 13vw;
+  font-weight: 800;
+  color: rgb(255, 251, 252);
+}
 
 /*# sourceMappingURL=main.css.map */
