@@ -1,15 +1,196 @@
 .main-404{
     @extend .main-index;
+    @include widhei(100vw, 60vh);
     background-size: cover;
     &__animation-404{
         @extend .main-index__bg;
+        background-position:50% -300px;
         background-image: url(../imagenes/deposito-gamma.webp);
     }
     &__div{
         @extend .main-index__text;
+        @include marpad(0, 0);
+        @include flex(col);
+        @include position(absolute, -20%, 0);
         overflow: hidden;
-        &--h1{
-            @include texts(13vw, 800, rgba(255, 251, 252));
+        & h1{
+            @include texts(30vw, 800, rgba(255, 251, 252));
+        }
+        &--h2{
+            @include wid(90%);
+            @include texts(7vw, 500, rgba(255, 251, 252));
+            @include flex(wrap);
+        }
+    }
+    &__a{
+        text-decoration: none;
+        &--h4{
+            text-decoration: underline;
+            @include marpad(0, 20px 0 10px 0);
+            @include texts(4vw, 700, rgba(30, 100, 100));
+            &:active{
+                @include texts(4.2vw, 700, rgb(110, 110, 110));
+            }
+        }
+    }
+}
+.section-404{
+    @include display(flex);
+    @include widhei(100%, 40vh);
+    @include pad(10px);
+    @include flex(col);
+    background-color: map-get($map: $colors, $key: b-dos);
+    text-align: center;
+    &__h3{
+        @include wid(100%);
+        @include texts(6vw, 700, rgba(30, 100, 100));
+        @include marpad(0,10px);
+    }
+    &__div{
+        &--card{
+            @include justali (center, center);
+            &--a{
+                &--content{
+                    @include pad(0 0 10px 0);
+                    &--img{
+                        @include wid(60%);
+                    }
+                    &--div{
+                        &--h5{
+                            @include texts(7vw, 500, white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:576px){
+    .main-404{
+        &__div{
+            & h1{
+                @include texts(23vw, 800, rgba(255, 251, 252));
+            }
+            &--h2{
+                @include texts(6vw, 500, rgba(255, 251, 252));
+            }
+        }
+        &__a{
+            &--h4{
+                @include texts(4.1vw, 700, rgba(30, 100, 100));
+                &:active{
+                    @include texts(4.3vw, 700, rgb(110, 110, 110));
+                }
+            }
+        }
+    }
+    .section-404{
+        &__h3{
+            @include texts(4.5vw, 700, rgba(30, 100, 100));
+        }
+        &__div{
+            &--card{
+                &--a{
+                    &--content{
+                        &--div{
+                            &--h5{
+                                @include texts(5.5vw, 500, white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px){
+    .main-404{
+        &__div{
+            & h1{
+                @include texts(18vw, 800, rgba(255, 251, 252));
+            }
+            &--h2{
+                @include wid(70%); 
+                @include texts(4vw, 500, rgba(255, 251, 252));
+            }
+        }
+        &__a{
+            &--h4{
+                @include texts(3.4vw, 700, rgba(30, 100, 100));
+                &:active{
+                    @include texts(3.5vw, 700, rgb(110, 110, 110));
+                }
+            }
+        }
+    }
+    .section-404{
+        &__h3{
+            @include texts(3.5vw, 700, rgba(30, 100, 100));
+        }
+        &__div{
+            &--card{
+                &--a{
+                    &--content{
+                        &--div{
+                            &--h5{
+                                @include texts(4vw, 500, white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width:992px){
+    .main-404{
+        &__animation-404{
+            background-position:50% -100px;
+        }
+        &__div{
+            & h1{
+                @include texts(14vw, 800, rgba(255, 251, 252));
+            }
+            &--h2{
+                @include wid(70%); 
+                @include texts(2vw, 500, rgba(255, 251, 252));
+            }
+        }
+        &__a{
+            &--h4{
+                @include texts(2vw, 700, rgba(30, 100, 100));
+                &:active{
+                    @include texts(2.1vw, 700, rgb(110, 110, 110));
+                }
+            }
+        }
+    }
+    .section-404{
+        
+        &__h3{
+            @include texts(1.8vw, 700, rgba(30, 100, 100));
+        }
+        &__div{
+            &--card{
+                @include justali(center, center);
+                &--a{
+                    &--content{
+                        @include justali(center, center);
+                        &--img{
+                            @include wid(80%);
+                        }
+                        &--div{
+                            &--h5{
+                                @include texts(1.7vw, 500, white);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
